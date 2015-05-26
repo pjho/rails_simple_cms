@@ -1,28 +1,11 @@
-== README
+This is a simple rails application the purpose of which is primarily to continue learning rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app will include:
 
-Things you may want to cover:
+- Ability for admin user to login and add / edit pages
+- Page Hierarchy?
+- Seo friendly urls
+- Blog Posts with categories & associated listing pages. Maybe comments.
+- Some capability to manage a main navigation.
+- Some capability to upload images.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

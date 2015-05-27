@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_admin!, except:[:show,:home]
-
+  layout "admin"
+  
   def index
     @pages = Page.all
   end
@@ -14,7 +15,7 @@ class PagesController < ApplicationController
 
   def show
     redirect_to_good_slug(@page) and return if bad_slug?(@page)
-    render(:layout => "layouts/public")
+    render layout: "layouts/public"
   end
 
   def new

@@ -14,8 +14,8 @@
     
   %body
     #wrapper
-      / =render "layouts/admin/sidebar"
-      %h2 TEMPLATE MISSING. THIS IS APPLICATION.HTML.HAML 
+      =render "layouts/admin/sidebar"
+      / Page Content
       #page-content-wrapper
         .container-fluid
           .row
@@ -23,5 +23,4 @@
               .notices
                 =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
                 =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
-              %h1 this is still application
               = yield

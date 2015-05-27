@@ -5,7 +5,15 @@ class PagesController < ApplicationController
     @pages = Page.all
   end
 
+
+  def home
+    @page = Page.find(1)
+    render :show
+  end
+
   def show
+    # @page = Page.find(params[:id])
+    redirect_to_good_slug(@page) and return if bad_slug?(@page)
   end
 
   def new

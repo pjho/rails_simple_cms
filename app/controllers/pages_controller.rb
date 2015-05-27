@@ -14,6 +14,7 @@ class PagesController < ApplicationController
 
   def show
     redirect_to_good_slug(@page) and return if bad_slug?(@page)
+    render(:layout => "layouts/public")
   end
 
   def new

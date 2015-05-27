@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title SimpleCms
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .notices
+      =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
+      =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
+    %h1 this is a public page
+    = yield

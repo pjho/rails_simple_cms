@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :admins
   root 'pages#home'
-  resources :pages, :path => ""
-  
+  devise_for :admins
+  resources :pages, :only => [:show,:home], :path => ''
+  resources :pages, :except => [:show,:home], :path => 'admin/pages'
+
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

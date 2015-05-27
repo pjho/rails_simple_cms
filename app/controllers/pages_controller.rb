@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!, except:[:show,:home]
 
   def index
     @pages = Page.all
@@ -12,7 +13,6 @@ class PagesController < ApplicationController
   end
 
   def show
-    # @page = Page.find(params[:id])
     redirect_to_good_slug(@page) and return if bad_slug?(@page)
   end
 

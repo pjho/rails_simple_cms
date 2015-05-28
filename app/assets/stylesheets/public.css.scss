@@ -2,21 +2,16 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree ./public
- *= require_self
+ * !! Public theme uses the following template: !!
+ * Strata by HTML5 UP
+ * html5up.net | @n33co
+ * Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
  */
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-body{
- background-color:lightblue;
-}
+@import 'public/vars';
+@import 'public/functions';
+@import 'public/mixins';
+@import 'public/font-awesome';
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import "public/skel";
+@import 'public/main'

@@ -1,14 +1,21 @@
 !!!
+/
+  Strata by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 %html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %title SimpleCms
-    = stylesheet_link_tag    'public', media: 'all', 'data-turbolinks-track' => true
+  =render 'layouts/public/head'
+  %body#top
+    =render 'layouts/public/header'
+    #main
+      %section
+        =render 'layouts/public/notices' if flash[:notice] || flash[:alert]
+        %h1 this is a public page
+        = yield
+      
+      =render 'layouts/public/section_1'
+      
+    
+    =render 'layouts/public/footer'
+
     = javascript_include_tag 'public', 'data-turbolinks-track' => true
-    = csrf_meta_tags
-  %body
-    .notices
-      =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
-      =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
-    %h1 this is a public page
-    = yield

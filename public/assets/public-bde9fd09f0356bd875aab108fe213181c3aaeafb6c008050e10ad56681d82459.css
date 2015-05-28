@@ -1,0 +1,6215 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * !! Public theme uses the following template: !!
+ * Strata by HTML5 UP
+ * html5up.net | @n33co
+ * Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+ */
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/assets/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot?v=4.3.0");
+  src: url("/assets/fontawesome-webfont-cbb644d0ee730ea57dd5fbae35ef5ba4a41d57a254a6b1215de5c9ff8a321c2d.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("/assets/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2?v=4.3.0") format("woff2"), url("/assets/fontawesome-webfont-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff?v=4.3.0") format("woff"), url("/assets/fontawesome-webfont-9e540a087924a6e64790149d735cac022640e4fa6bff6bd65f5e9f41529bf0b3.ttf?v=4.3.0") format("truetype"), url("/assets/fontawesome-webfont-bfdef833219a6edffd9c3cbc28db72739d22bb4d20cc2e2f8d56a7a4d408a206.svg?v=4.3.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: .14285714em;
+  text-align: center;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
+  border-radius: .1em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+:root .fa-rotate-90, :root .fa-rotate-180, :root .fa-rotate-270, :root .fa-flip-horizontal, :root .fa-flip-vertical {
+  filter: none;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-remove:before, .fa-close:before, .fa-times:before {
+  content: "\f00d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gear:before, .fa-cog:before {
+  content: "\f013";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rotate-right:before, .fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dedent:before, .fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-photo:before, .fa-image:before, .fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-edit:before, .fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mail-forward:before, .fa-share:before {
+  content: "\f064";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-warning:before, .fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bar-chart-o:before, .fa-bar-chart:before {
+  content: "\f080";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gears:before, .fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-group:before, .fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chain:before, .fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cut:before, .fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-copy:before, .fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-save:before, .fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-unsorted:before, .fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-down:before, .fa-sort-desc:before {
+  content: "\f0dd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-up:before, .fa-sort-asc:before {
+  content: "\f0de";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rotate-left:before, .fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-legal:before, .fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dashboard:before, .fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flash:before, .fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paste:before, .fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mobile-phone:before, .fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mail-reply:before, .fa-reply:before {
+  content: "\f112";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mail-reply-all:before, .fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-unlink:before, .fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-down:before, .fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-up:before, .fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-right:before, .fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-euro:before, .fa-eur:before {
+  content: "\f153";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dollar:before, .fa-usd:before {
+  content: "\f155";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-rupee:before, .fa-inr:before {
+  content: "\f156";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cny:before, .fa-rmb:before, .fa-yen:before, .fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ruble:before, .fa-rouble:before, .fa-rub:before {
+  content: "\f158";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-won:before, .fa-krw:before {
+  content: "\f159";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bitcoin:before, .fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-gittip:before, .fa-gratipay:before {
+  content: "\f184";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-left:before, .fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-turkish-lira:before, .fa-try:before {
+  content: "\f195";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-slack:before {
+  content: "\f198";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-wordpress:before {
+  content: "\f19a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-openid:before {
+  content: "\f19b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-institution:before, .fa-bank:before, .fa-university:before {
+  content: "\f19c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mortar-board:before, .fa-graduation-cap:before {
+  content: "\f19d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-yahoo:before {
+  content: "\f19e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-google:before {
+  content: "\f1a0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-reddit:before {
+  content: "\f1a1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-delicious:before {
+  content: "\f1a5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-digg:before {
+  content: "\f1a6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-drupal:before {
+  content: "\f1a9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-joomla:before {
+  content: "\f1aa";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-language:before {
+  content: "\f1ab";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-fax:before {
+  content: "\f1ac";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-building:before {
+  content: "\f1ad";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-child:before {
+  content: "\f1ae";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paw:before {
+  content: "\f1b0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-spoon:before {
+  content: "\f1b1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cube:before {
+  content: "\f1b2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cubes:before {
+  content: "\f1b3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-behance:before {
+  content: "\f1b4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-steam:before {
+  content: "\f1b6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-recycle:before {
+  content: "\f1b8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-automobile:before, .fa-car:before {
+  content: "\f1b9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cab:before, .fa-taxi:before {
+  content: "\f1ba";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-spotify:before {
+  content: "\f1bc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-database:before {
+  content: "\f1c0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before {
+  content: "\f1c5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-zip-o:before, .fa-file-archive-o:before {
+  content: "\f1c6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-sound-o:before, .fa-file-audio-o:before {
+  content: "\f1c7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-movie-o:before, .fa-file-video-o:before {
+  content: "\f1c8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-vine:before {
+  content: "\f1ca";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-life-bouy:before, .fa-life-buoy:before, .fa-life-saver:before, .fa-support:before, .fa-life-ring:before {
+  content: "\f1cd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ra:before, .fa-rebel:before {
+  content: "\f1d0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ge:before, .fa-empire:before {
+  content: "\f1d1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-git-square:before {
+  content: "\f1d2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-git:before {
+  content: "\f1d3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-wechat:before, .fa-weixin:before {
+  content: "\f1d7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-send:before, .fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-send-o:before, .fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-history:before {
+  content: "\f1da";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-genderless:before, .fa-circle-thin:before {
+  content: "\f1db";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-header:before {
+  content: "\f1dc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bomb:before {
+  content: "\f1e2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-soccer-ball-o:before, .fa-futbol-o:before {
+  content: "\f1e3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-tty:before {
+  content: "\f1e4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-binoculars:before {
+  content: "\f1e5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-plug:before {
+  content: "\f1e6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-slideshare:before {
+  content: "\f1e7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-twitch:before {
+  content: "\f1e8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-yelp:before {
+  content: "\f1e9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-newspaper-o:before {
+  content: "\f1ea";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-wifi:before {
+  content: "\f1eb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-calculator:before {
+  content: "\f1ec";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paypal:before {
+  content: "\f1ed";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-google-wallet:before {
+  content: "\f1ee";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-visa:before {
+  content: "\f1f0";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-mastercard:before {
+  content: "\f1f1";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-discover:before {
+  content: "\f1f2";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-amex:before {
+  content: "\f1f3";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-paypal:before {
+  content: "\f1f4";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc-stripe:before {
+  content: "\f1f5";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bell-slash:before {
+  content: "\f1f6";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bell-slash-o:before {
+  content: "\f1f7";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-trash:before {
+  content: "\f1f8";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-copyright:before {
+  content: "\f1f9";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-at:before {
+  content: "\f1fa";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-eyedropper:before {
+  content: "\f1fb";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-paint-brush:before {
+  content: "\f1fc";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-birthday-cake:before {
+  content: "\f1fd";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-area-chart:before {
+  content: "\f1fe";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pie-chart:before {
+  content: "\f200";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-line-chart:before {
+  content: "\f201";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lastfm:before {
+  content: "\f202";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-lastfm-square:before {
+  content: "\f203";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-off:before {
+  content: "\f204";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-toggle-on:before {
+  content: "\f205";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bicycle:before {
+  content: "\f206";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-bus:before {
+  content: "\f207";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ioxhost:before {
+  content: "\f208";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-angellist:before {
+  content: "\f209";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cc:before {
+  content: "\f20a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-shekel:before, .fa-sheqel:before, .fa-ils:before {
+  content: "\f20b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-meanpath:before {
+  content: "\f20c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-buysellads:before {
+  content: "\f20d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-connectdevelop:before {
+  content: "\f20e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-dashcube:before {
+  content: "\f210";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-forumbee:before {
+  content: "\f211";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-leanpub:before {
+  content: "\f212";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-sellsy:before {
+  content: "\f213";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-shirtsinbulk:before {
+  content: "\f214";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-simplybuilt:before {
+  content: "\f215";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-skyatlas:before {
+  content: "\f216";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cart-plus:before {
+  content: "\f217";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-cart-arrow-down:before {
+  content: "\f218";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-diamond:before {
+  content: "\f219";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-ship:before {
+  content: "\f21a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-user-secret:before {
+  content: "\f21b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-motorcycle:before {
+  content: "\f21c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-street-view:before {
+  content: "\f21d";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-heartbeat:before {
+  content: "\f21e";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-venus:before {
+  content: "\f221";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mars:before {
+  content: "\f222";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mercury:before {
+  content: "\f223";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-transgender:before {
+  content: "\f224";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-transgender-alt:before {
+  content: "\f225";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-venus-double:before {
+  content: "\f226";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mars-double:before {
+  content: "\f227";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-venus-mars:before {
+  content: "\f228";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mars-stroke:before {
+  content: "\f229";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mars-stroke-v:before {
+  content: "\f22a";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-mars-stroke-h:before {
+  content: "\f22b";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-neuter:before {
+  content: "\f22c";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-facebook-official:before {
+  content: "\f230";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-pinterest-p:before {
+  content: "\f231";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-whatsapp:before {
+  content: "\f232";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-server:before {
+  content: "\f233";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-user-plus:before {
+  content: "\f234";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-user-times:before {
+  content: "\f235";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-hotel:before, .fa-bed:before {
+  content: "\f236";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-viacoin:before {
+  content: "\f237";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-train:before {
+  content: "\f238";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-subway:before {
+  content: "\f239";
+}
+
+/* line 16, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/font-awesome.scss */
+.fa-medium:before {
+  content: "\f23a";
+}
+
+/* Reset */
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+body {
+  line-height: 1;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* Box Model */
+/* line 167, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Containers */
+/* line 377, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container.\31 25\25 {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 960px;
+}
+
+/* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container.\37 5\25 {
+  width: 720px;
+}
+
+/* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container.\35 0\25 {
+  width: 480px;
+}
+
+/* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container.\32 5\25 {
+  width: 240px;
+}
+
+/* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.container {
+  width: 960px;
+}
+
+@media screen and (max-width: 1800px) {
+  /* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
+  }
+
+  /* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\37 5\25 {
+    width: 720px;
+  }
+
+  /* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\35 0\25 {
+    width: 480px;
+  }
+
+  /* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\32 5\25 {
+    width: 240px;
+  }
+
+  /* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
+  }
+
+  /* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\37 5\25 {
+    width: 720px;
+  }
+
+  /* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\35 0\25 {
+    width: 480px;
+  }
+
+  /* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\32 5\25 {
+    width: 240px;
+  }
+
+  /* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
+  }
+
+  /* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\37 5\25 {
+    width: 720px;
+  }
+
+  /* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\35 0\25 {
+    width: 480px;
+  }
+
+  /* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\32 5\25 {
+    width: 240px;
+  }
+
+  /* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
+  }
+
+  /* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\37 5\25 {
+    width: 720px;
+  }
+
+  /* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\35 0\25 {
+    width: 480px;
+  }
+
+  /* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\32 5\25 {
+    width: 240px;
+  }
+
+  /* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 204, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\31 25\25 {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 960px;
+  }
+
+  /* line 205, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\37 5\25 {
+    width: 720px;
+  }
+
+  /* line 206, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\35 0\25 {
+    width: 480px;
+  }
+
+  /* line 207, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container.\32 5\25 {
+    width: 240px;
+  }
+
+  /* line 210, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .container {
+    width: 960px;
+  }
+}
+/* Grid */
+/* line 437, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row {
+  border-bottom: solid 1px transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 444, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row > * {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 451, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row:after, .row:before {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+/* line 458, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform > * > :first-child {
+  margin-top: 0;
+}
+
+/* line 462, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform > * > :last-child {
+  margin-bottom: 0;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\30 \25  > * {
+  padding: 0 0 0 0em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\30 \25 {
+  margin: 0 0 -1px 0em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\30 \25  > * {
+  padding: 0em 0 0 0em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\30 \25 {
+  margin: 0em 0 -1px 0em;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row > * {
+  padding: 0 0 0 2.5em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row {
+  margin: 0 0 -1px -2.5em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform > * {
+  padding: 2.5em 0 0 2.5em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform {
+  margin: -2.5em 0 -1px -2.5em;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\32 00\25  > * {
+  padding: 0 0 0 5em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\32 00\25 {
+  margin: 0 0 -1px -5em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\32 00\25  > * {
+  padding: 5em 0 0 5em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\32 00\25 {
+  margin: -5em 0 -1px -5em;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\31 50\25  > * {
+  padding: 0 0 0 3.75em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\31 50\25 {
+  margin: 0 0 -1px -3.75em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\31 50\25  > * {
+  padding: 3.75em 0 0 3.75em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\31 50\25 {
+  margin: -3.75em 0 -1px -3.75em;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\35 0\25  > * {
+  padding: 0 0 0 1.25em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\35 0\25 {
+  margin: 0 0 -1px -1.25em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\35 0\25  > * {
+  padding: 1.25em 0 0 1.25em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\35 0\25 {
+  margin: -1.25em 0 -1px -1.25em;
+}
+
+/* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\32 5\25  > * {
+  padding: 0 0 0 0.625em;
+}
+
+/* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.\32 5\25 {
+  margin: 0 0 -1px -0.625em;
+}
+
+/* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\32 5\25  > * {
+  padding: 0.625em 0 0 0.625em;
+}
+
+/* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.row.uniform.\32 5\25 {
+  margin: -0.625em 0 -1px -0.625em;
+}
+
+/* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\31 2u, .\31 2u\24 {
+  width: 100%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\31 1u, .\31 1u\24 {
+  width: 91.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\31 0u, .\31 0u\24 {
+  width: 83.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\39 u, .\39 u\24 {
+  width: 75%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\38 u, .\38 u\24 {
+  width: 66.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\37 u, .\37 u\24 {
+  width: 58.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\36 u, .\36 u\24 {
+  width: 50%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\35 u, .\35 u\24 {
+  width: 41.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\34 u, .\34 u\24 {
+  width: 33.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\33 u, .\33 u\24 {
+  width: 25%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\32 u, .\32 u\24 {
+  width: 16.6666666667%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\31 u, .\31 u\24 {
+  width: 8.3333333333%;
+  clear: none;
+  margin-left: 0;
+}
+
+/* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\31 2u\24  + *,
+.\31 1u\24  + *,
+.\31 0u\24  + *,
+.\39 u\24  + *,
+.\38 u\24  + *,
+.\37 u\24  + *,
+.\36 u\24  + *,
+.\35 u\24  + *,
+.\34 u\24  + *,
+.\33 u\24  + *,
+.\32 u\24  + *,
+.\31 u\24  + * {
+  clear: left;
+}
+
+/* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-11u {
+  margin-left: 91.66666667%;
+}
+
+/* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-10u {
+  margin-left: 83.33333333%;
+}
+
+/* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-9u {
+  margin-left: 75%;
+}
+
+/* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-8u {
+  margin-left: 66.66666667%;
+}
+
+/* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-7u {
+  margin-left: 58.33333333%;
+}
+
+/* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-6u {
+  margin-left: 50%;
+}
+
+/* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-5u {
+  margin-left: 41.66666667%;
+}
+
+/* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-4u {
+  margin-left: 33.33333333%;
+}
+
+/* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-3u {
+  margin-left: 25%;
+}
+
+/* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-2u {
+  margin-left: 16.66666667%;
+}
+
+/* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+.\-1u {
+  margin-left: 8.33333333%;
+}
+
+@media screen and (max-width: 1800px) {
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row > * {
+    padding: 0 0 0 2.5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row {
+    margin: 0 0 -1px -2.5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform > * {
+    padding: 2.5em 0 0 2.5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform {
+    margin: -2.5em 0 -1px -2.5em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25  > * {
+    padding: 0 0 0 5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25 {
+    margin: 0 0 -1px -5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25  > * {
+    padding: 5em 0 0 5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25 {
+    margin: -5em 0 -1px -5em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25  > * {
+    padding: 0 0 0 3.75em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25 {
+    margin: 0 0 -1px -3.75em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25  > * {
+    padding: 3.75em 0 0 3.75em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25 {
+    margin: -3.75em 0 -1px -3.75em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25  > * {
+    padding: 0 0 0 1.25em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25 {
+    margin: 0 0 -1px -1.25em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25  > * {
+    padding: 1.25em 0 0 1.25em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25 {
+    margin: -1.25em 0 -1px -1.25em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25  > * {
+    padding: 0 0 0 0.625em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25 {
+    margin: 0 0 -1px -0.625em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25  > * {
+    padding: 0.625em 0 0 0.625em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25 {
+    margin: -0.625em 0 -1px -0.625em;
+  }
+
+  /* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\28xlarge\29, .\31 2u\24\28xlarge\29 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 1u\28xlarge\29, .\31 1u\24\28xlarge\29 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 0u\28xlarge\29, .\31 0u\24\28xlarge\29 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\39 u\28xlarge\29, .\39 u\24\28xlarge\29 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\38 u\28xlarge\29, .\38 u\24\28xlarge\29 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\37 u\28xlarge\29, .\37 u\24\28xlarge\29 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\36 u\28xlarge\29, .\36 u\24\28xlarge\29 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\35 u\28xlarge\29, .\35 u\24\28xlarge\29 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\34 u\28xlarge\29, .\34 u\24\28xlarge\29 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\33 u\28xlarge\29, .\33 u\24\28xlarge\29 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\32 u\28xlarge\29, .\32 u\24\28xlarge\29 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 u\28xlarge\29, .\31 u\24\28xlarge\29 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\24\28xlarge\29  + *,
+  .\31 1u\24\28xlarge\29  + *,
+  .\31 0u\24\28xlarge\29  + *,
+  .\39 u\24\28xlarge\29  + *,
+  .\38 u\24\28xlarge\29  + *,
+  .\37 u\24\28xlarge\29  + *,
+  .\36 u\24\28xlarge\29  + *,
+  .\35 u\24\28xlarge\29  + *,
+  .\34 u\24\28xlarge\29  + *,
+  .\33 u\24\28xlarge\29  + *,
+  .\32 u\24\28xlarge\29  + *,
+  .\31 u\24\28xlarge\29  + * {
+    clear: left;
+  }
+
+  /* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-11u\28xlarge\29 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-10u\28xlarge\29 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-9u\28xlarge\29 {
+    margin-left: 75%;
+  }
+
+  /* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-8u\28xlarge\29 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-7u\28xlarge\29 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-6u\28xlarge\29 {
+    margin-left: 50%;
+  }
+
+  /* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-5u\28xlarge\29 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-4u\28xlarge\29 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-3u\28xlarge\29 {
+    margin-left: 25%;
+  }
+
+  /* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-2u\28xlarge\29 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-1u\28xlarge\29 {
+    margin-left: 8.33333333%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row > * {
+    padding: 0 0 0 2em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row {
+    margin: 0 0 -1px -2em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform > * {
+    padding: 2em 0 0 2em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform {
+    margin: -2em 0 -1px -2em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25  > * {
+    padding: 0 0 0 4em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25 {
+    margin: 0 0 -1px -4em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25  > * {
+    padding: 4em 0 0 4em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25 {
+    margin: -4em 0 -1px -4em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25  > * {
+    padding: 0 0 0 3em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25 {
+    margin: 0 0 -1px -3em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25  > * {
+    padding: 3em 0 0 3em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25 {
+    margin: -3em 0 -1px -3em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25  > * {
+    padding: 0 0 0 1em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25 {
+    margin: 0 0 -1px -1em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25  > * {
+    padding: 1em 0 0 1em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25 {
+    margin: -1em 0 -1px -1em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25  > * {
+    padding: 0 0 0 0.5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25 {
+    margin: 0 0 -1px -0.5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25  > * {
+    padding: 0.5em 0 0 0.5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25 {
+    margin: -0.5em 0 -1px -0.5em;
+  }
+
+  /* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\28large\29, .\31 2u\24\28large\29 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 1u\28large\29, .\31 1u\24\28large\29 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 0u\28large\29, .\31 0u\24\28large\29 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\39 u\28large\29, .\39 u\24\28large\29 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\38 u\28large\29, .\38 u\24\28large\29 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\37 u\28large\29, .\37 u\24\28large\29 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\36 u\28large\29, .\36 u\24\28large\29 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\35 u\28large\29, .\35 u\24\28large\29 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\34 u\28large\29, .\34 u\24\28large\29 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\33 u\28large\29, .\33 u\24\28large\29 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\32 u\28large\29, .\32 u\24\28large\29 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 u\28large\29, .\31 u\24\28large\29 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\24\28large\29  + *,
+  .\31 1u\24\28large\29  + *,
+  .\31 0u\24\28large\29  + *,
+  .\39 u\24\28large\29  + *,
+  .\38 u\24\28large\29  + *,
+  .\37 u\24\28large\29  + *,
+  .\36 u\24\28large\29  + *,
+  .\35 u\24\28large\29  + *,
+  .\34 u\24\28large\29  + *,
+  .\33 u\24\28large\29  + *,
+  .\32 u\24\28large\29  + *,
+  .\31 u\24\28large\29  + * {
+    clear: left;
+  }
+
+  /* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-11u\28large\29 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-10u\28large\29 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-9u\28large\29 {
+    margin-left: 75%;
+  }
+
+  /* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-8u\28large\29 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-7u\28large\29 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-6u\28large\29 {
+    margin-left: 50%;
+  }
+
+  /* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-5u\28large\29 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-4u\28large\29 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-3u\28large\29 {
+    margin-left: 25%;
+  }
+
+  /* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-2u\28large\29 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-1u\28large\29 {
+    margin-left: 8.33333333%;
+  }
+}
+@media screen and (max-width: 980px) {
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row > * {
+    padding: 0 0 0 2em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row {
+    margin: 0 0 -1px -2em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform > * {
+    padding: 2em 0 0 2em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform {
+    margin: -2em 0 -1px -2em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25  > * {
+    padding: 0 0 0 4em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25 {
+    margin: 0 0 -1px -4em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25  > * {
+    padding: 4em 0 0 4em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25 {
+    margin: -4em 0 -1px -4em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25  > * {
+    padding: 0 0 0 3em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25 {
+    margin: 0 0 -1px -3em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25  > * {
+    padding: 3em 0 0 3em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25 {
+    margin: -3em 0 -1px -3em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25  > * {
+    padding: 0 0 0 1em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25 {
+    margin: 0 0 -1px -1em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25  > * {
+    padding: 1em 0 0 1em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25 {
+    margin: -1em 0 -1px -1em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25  > * {
+    padding: 0 0 0 0.5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25 {
+    margin: 0 0 -1px -0.5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25  > * {
+    padding: 0.5em 0 0 0.5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25 {
+    margin: -0.5em 0 -1px -0.5em;
+  }
+
+  /* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\28medium\29, .\31 2u\24\28medium\29 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 1u\28medium\29, .\31 1u\24\28medium\29 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 0u\28medium\29, .\31 0u\24\28medium\29 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\39 u\28medium\29, .\39 u\24\28medium\29 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\38 u\28medium\29, .\38 u\24\28medium\29 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\37 u\28medium\29, .\37 u\24\28medium\29 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\36 u\28medium\29, .\36 u\24\28medium\29 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\35 u\28medium\29, .\35 u\24\28medium\29 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\34 u\28medium\29, .\34 u\24\28medium\29 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\33 u\28medium\29, .\33 u\24\28medium\29 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\32 u\28medium\29, .\32 u\24\28medium\29 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 u\28medium\29, .\31 u\24\28medium\29 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\24\28medium\29  + *,
+  .\31 1u\24\28medium\29  + *,
+  .\31 0u\24\28medium\29  + *,
+  .\39 u\24\28medium\29  + *,
+  .\38 u\24\28medium\29  + *,
+  .\37 u\24\28medium\29  + *,
+  .\36 u\24\28medium\29  + *,
+  .\35 u\24\28medium\29  + *,
+  .\34 u\24\28medium\29  + *,
+  .\33 u\24\28medium\29  + *,
+  .\32 u\24\28medium\29  + *,
+  .\31 u\24\28medium\29  + * {
+    clear: left;
+  }
+
+  /* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-11u\28medium\29 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-10u\28medium\29 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-9u\28medium\29 {
+    margin-left: 75%;
+  }
+
+  /* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-8u\28medium\29 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-7u\28medium\29 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-6u\28medium\29 {
+    margin-left: 50%;
+  }
+
+  /* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-5u\28medium\29 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-4u\28medium\29 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-3u\28medium\29 {
+    margin-left: 25%;
+  }
+
+  /* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-2u\28medium\29 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-1u\28medium\29 {
+    margin-left: 8.33333333%;
+  }
+}
+@media screen and (max-width: 736px) {
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row > * {
+    padding: 0 0 0 1.5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row {
+    margin: 0 0 -1px -1.5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform > * {
+    padding: 1.5em 0 0 1.5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform {
+    margin: -1.5em 0 -1px -1.5em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25  > * {
+    padding: 0 0 0 3em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25 {
+    margin: 0 0 -1px -3em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25  > * {
+    padding: 3em 0 0 3em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25 {
+    margin: -3em 0 -1px -3em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25  > * {
+    padding: 0 0 0 2.25em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25 {
+    margin: 0 0 -1px -2.25em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25  > * {
+    padding: 2.25em 0 0 2.25em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25 {
+    margin: -2.25em 0 -1px -2.25em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25  > * {
+    padding: 0 0 0 0.75em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25 {
+    margin: 0 0 -1px -0.75em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25  > * {
+    padding: 0.75em 0 0 0.75em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25 {
+    margin: -0.75em 0 -1px -0.75em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25  > * {
+    padding: 0 0 0 0.375em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25 {
+    margin: 0 0 -1px -0.375em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25  > * {
+    padding: 0.375em 0 0 0.375em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25 {
+    margin: -0.375em 0 -1px -0.375em;
+  }
+
+  /* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\28small\29, .\31 2u\24\28small\29 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 1u\28small\29, .\31 1u\24\28small\29 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 0u\28small\29, .\31 0u\24\28small\29 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\39 u\28small\29, .\39 u\24\28small\29 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\38 u\28small\29, .\38 u\24\28small\29 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\37 u\28small\29, .\37 u\24\28small\29 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\36 u\28small\29, .\36 u\24\28small\29 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\35 u\28small\29, .\35 u\24\28small\29 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\34 u\28small\29, .\34 u\24\28small\29 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\33 u\28small\29, .\33 u\24\28small\29 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\32 u\28small\29, .\32 u\24\28small\29 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 u\28small\29, .\31 u\24\28small\29 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\24\28small\29  + *,
+  .\31 1u\24\28small\29  + *,
+  .\31 0u\24\28small\29  + *,
+  .\39 u\24\28small\29  + *,
+  .\38 u\24\28small\29  + *,
+  .\37 u\24\28small\29  + *,
+  .\36 u\24\28small\29  + *,
+  .\35 u\24\28small\29  + *,
+  .\34 u\24\28small\29  + *,
+  .\33 u\24\28small\29  + *,
+  .\32 u\24\28small\29  + *,
+  .\31 u\24\28small\29  + * {
+    clear: left;
+  }
+
+  /* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-11u\28small\29 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-10u\28small\29 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-9u\28small\29 {
+    margin-left: 75%;
+  }
+
+  /* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-8u\28small\29 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-7u\28small\29 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-6u\28small\29 {
+    margin-left: 50%;
+  }
+
+  /* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-5u\28small\29 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-4u\28small\29 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-3u\28small\29 {
+    margin-left: 25%;
+  }
+
+  /* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-2u\28small\29 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-1u\28small\29 {
+    margin-left: 8.33333333%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row > * {
+    padding: 0 0 0 1.5em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row {
+    margin: 0 0 -1px -1.5em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform > * {
+    padding: 1.5em 0 0 1.5em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform {
+    margin: -1.5em 0 -1px -1.5em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25  > * {
+    padding: 0 0 0 3em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 00\25 {
+    margin: 0 0 -1px -3em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25  > * {
+    padding: 3em 0 0 3em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 00\25 {
+    margin: -3em 0 -1px -3em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25  > * {
+    padding: 0 0 0 2.25em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\31 50\25 {
+    margin: 0 0 -1px -2.25em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25  > * {
+    padding: 2.25em 0 0 2.25em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\31 50\25 {
+    margin: -2.25em 0 -1px -2.25em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25  > * {
+    padding: 0 0 0 0.75em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\35 0\25 {
+    margin: 0 0 -1px -0.75em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25  > * {
+    padding: 0.75em 0 0 0.75em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\35 0\25 {
+    margin: -0.75em 0 -1px -0.75em;
+  }
+
+  /* line 305, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25  > * {
+    padding: 0 0 0 0.375em;
+  }
+
+  /* line 306, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.\32 5\25 {
+    margin: 0 0 -1px -0.375em;
+  }
+
+  /* line 309, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25  > * {
+    padding: 0.375em 0 0 0.375em;
+  }
+
+  /* line 310, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .row.uniform.\32 5\25 {
+    margin: -0.375em 0 -1px -0.375em;
+  }
+
+  /* line 240, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\28xsmall\29, .\31 2u\24\28xsmall\29 {
+    width: 100%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 241, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 1u\28xsmall\29, .\31 1u\24\28xsmall\29 {
+    width: 91.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 242, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 0u\28xsmall\29, .\31 0u\24\28xsmall\29 {
+    width: 83.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\39 u\28xsmall\29, .\39 u\24\28xsmall\29 {
+    width: 75%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\38 u\28xsmall\29, .\38 u\24\28xsmall\29 {
+    width: 66.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 245, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\37 u\28xsmall\29, .\37 u\24\28xsmall\29 {
+    width: 58.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 246, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\36 u\28xsmall\29, .\36 u\24\28xsmall\29 {
+    width: 50%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 247, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\35 u\28xsmall\29, .\35 u\24\28xsmall\29 {
+    width: 41.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 248, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\34 u\28xsmall\29, .\34 u\24\28xsmall\29 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 249, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\33 u\28xsmall\29, .\33 u\24\28xsmall\29 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 250, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\32 u\28xsmall\29, .\32 u\24\28xsmall\29 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 251, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 u\28xsmall\29, .\31 u\24\28xsmall\29 {
+    width: 8.3333333333%;
+    clear: none;
+    margin-left: 0;
+  }
+
+  /* line 253, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\31 2u\24\28xsmall\29  + *,
+  .\31 1u\24\28xsmall\29  + *,
+  .\31 0u\24\28xsmall\29  + *,
+  .\39 u\24\28xsmall\29  + *,
+  .\38 u\24\28xsmall\29  + *,
+  .\37 u\24\28xsmall\29  + *,
+  .\36 u\24\28xsmall\29  + *,
+  .\35 u\24\28xsmall\29  + *,
+  .\34 u\24\28xsmall\29  + *,
+  .\33 u\24\28xsmall\29  + *,
+  .\32 u\24\28xsmall\29  + *,
+  .\31 u\24\28xsmall\29  + * {
+    clear: left;
+  }
+
+  /* line 268, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-11u\28xsmall\29 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-10u\28xsmall\29 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 270, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-9u\28xsmall\29 {
+    margin-left: 75%;
+  }
+
+  /* line 271, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-8u\28xsmall\29 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 272, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-7u\28xsmall\29 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 273, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-6u\28xsmall\29 {
+    margin-left: 50%;
+  }
+
+  /* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-5u\28xsmall\29 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 275, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-4u\28xsmall\29 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 276, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-3u\28xsmall\29 {
+    margin-left: 25%;
+  }
+
+  /* line 277, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-2u\28xsmall\29 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 278, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_skel.scss */
+  .\-1u\28xsmall\29 {
+    margin-left: 8.33333333%;
+  }
+}
+/* Basic */
+/* line 34, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body {
+  background: #fff;
+}
+/* line 38, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+  -moz-animation: none !important;
+  -webkit-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+  -moz-transition: none !important;
+  -webkit-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+/* line 45, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body, input, select, textarea {
+  color: #a2a2a2;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+/* line 53, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+a {
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  border-bottom: dotted 1px;
+  color: #49bf9d;
+  text-decoration: none;
+}
+/* line 59, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+a:hover {
+  border-bottom-color: transparent;
+  color: #49bf9d !important;
+  text-decoration: none;
+}
+
+/* line 66, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+strong, b {
+  color: #787878;
+  font-weight: 400;
+}
+
+/* line 71, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+em, i {
+  font-style: italic;
+}
+
+/* line 75, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+p {
+  margin: 0 0 2em 0;
+}
+
+/* line 79, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #787878;
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+/* line 85, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 91, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+/* line 96, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+/* line 101, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5em;
+}
+
+/* line 106, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h4 {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/* line 111, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
+/* line 116, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em;
+}
+
+/* line 121, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+sub {
+  font-size: 0.8em;
+  position: relative;
+  top: 0.5em;
+}
+
+/* line 127, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+sup {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.5em;
+}
+
+/* line 133, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+hr {
+  border: 0;
+  border-bottom: solid 2px #efefef;
+  margin: 2em 0;
+}
+/* line 140, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+hr.major {
+  margin: 3em 0;
+}
+
+/* line 145, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+blockquote {
+  border-left: solid 6px #efefef;
+  font-style: italic;
+  margin: 0 0 2em 0;
+  padding: 0.5em 0 0.5em 1.5em;
+}
+
+/* line 152, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+code {
+  background: #f7f7f7;
+  border-radius: 0.35em;
+  border: solid 2px #efefef;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0.25em;
+  padding: 0.25em 0.65em;
+}
+
+/* line 162, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+pre {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+}
+/* line 168, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+pre code {
+  display: block;
+  line-height: 1.75em;
+  padding: 1em 1.5em;
+  overflow-x: auto;
+}
+
+/* line 176, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.align-left {
+  text-align: left;
+}
+
+/* line 180, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 184, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.align-right {
+  text-align: right;
+}
+
+/* Section/Article */
+/* line 191, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+section.special, article.special {
+  text-align: center;
+}
+
+/* line 197, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+header p {
+  color: #b2b2b2;
+  position: relative;
+  margin: 0 0 1.5em 0;
+}
+/* line 203, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+header h2 + p {
+  font-size: 1.25em;
+  margin-top: -1em;
+  line-height: 1.5em;
+}
+/* line 209, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+header h3 + p {
+  font-size: 1.1em;
+  margin-top: -0.8em;
+  line-height: 1.5em;
+}
+/* line 215, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+header h4 + p,
+header h5 + p,
+header h6 + p {
+  font-size: 0.9em;
+  margin-top: -0.6em;
+  line-height: 1.5em;
+}
+/* line 224, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+header.major h2 {
+  font-size: 2em;
+}
+
+/* Form */
+/* line 232, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+form {
+  margin: 0 0 2em 0;
+}
+
+/* line 236, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+label {
+  color: #787878;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+  margin: 0 0 1em 0;
+}
+
+/* line 244, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #f7f7f7;
+  border-radius: 0.35em;
+  border: solid 2px transparent;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 0.75em;
+  text-decoration: none;
+  width: 100%;
+}
+/* line 260, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+select:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+/* line 264, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #49bf9d;
+}
+
+/* line 269, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.select-wrapper {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+.select-wrapper:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.select-wrapper:before {
+  color: #dfdfdf;
+  content: '\f078';
+  display: block;
+  height: 2.75em;
+  line-height: 2.75em;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 2.75em;
+}
+/* line 288, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.select-wrapper select::-ms-expand {
+  display: none;
+}
+
+/* line 293, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  height: 2.75em;
+}
+
+/* line 300, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+textarea {
+  padding: 0.75em;
+}
+
+/* line 304, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  float: left;
+  margin-right: -2em;
+  opacity: 0;
+  width: 1em;
+  z-index: -1;
+}
+/* line 314, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  text-decoration: none;
+  color: #a2a2a2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  padding-left: 2.4em;
+  padding-right: 0.75em;
+  position: relative;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 325, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  background: #f7f7f7;
+  border-radius: 0.35em;
+  border: solid 2px transparent;
+  content: '';
+  display: inline-block;
+  height: 1.65em;
+  left: 0;
+  line-height: 1.58125em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 1.65em;
+}
+/* line 342, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+  background: #787878;
+  border-color: #787878;
+  color: #fff;
+  content: '\f00c';
+}
+/* line 351, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+  border-color: #49bf9d;
+}
+
+/* line 359, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="checkbox"] + label:before {
+  border-radius: 0.35em;
+}
+
+/* line 367, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="radio"] + label:before {
+  border-radius: 100%;
+}
+
+/* line 373, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+::-webkit-input-placeholder {
+  color: #b2b2b2 !important;
+  opacity: 1.0;
+}
+
+/* line 378, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+:-moz-placeholder {
+  color: #b2b2b2 !important;
+  opacity: 1.0;
+}
+
+/* line 383, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+::-moz-placeholder {
+  color: #b2b2b2 !important;
+  opacity: 1.0;
+}
+
+/* line 388, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+:-ms-input-placeholder {
+  color: #b2b2b2 !important;
+  opacity: 1.0;
+}
+
+/* line 393, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.formerize-placeholder {
+  color: #b2b2b2 !important;
+  opacity: 1.0;
+}
+
+/* Box */
+/* line 400, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.box {
+  border-radius: 0.35em;
+  border: solid 2px #efefef;
+  margin-bottom: 2em;
+  padding: 1.5em;
+}
+/* line 406, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
+  margin-bottom: 0;
+}
+/* line 412, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.box.alt {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
+
+/* Icon */
+/* line 421, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 426, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.icon > .label {
+  display: none;
+}
+
+/* Image */
+/* line 433, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image {
+  border-radius: 0.35em;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+/* line 439, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image:before {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  background: url("images/overlay.png");
+  border-radius: 0.35em;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* line 453, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.thumb {
+  text-align: center;
+}
+/* line 456, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.thumb:after {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 0.35em;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  content: 'View';
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 400;
+  left: 50%;
+  line-height: 2.25em;
+  margin: -1.25em 0 0 -3em;
+  opacity: 0;
+  padding: 0 1.5em;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  white-space: nowrap;
+}
+/* line 478, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.thumb:hover:after {
+  opacity: 1.0;
+}
+/* line 482, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.thumb:hover:before {
+  background: url("images/overlay.png"), url("images/overlay.png");
+  opacity: 1.0;
+}
+/* line 489, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image img {
+  border-radius: 0.35em;
+  display: block;
+}
+/* line 494, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.left {
+  float: left;
+  margin: 0 1.5em 1em 0;
+  top: 0.25em;
+}
+/* line 500, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.right {
+  float: right;
+  margin: 0 0 1em 1.5em;
+  top: 0.25em;
+}
+/* line 506, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.left, .image.right {
+  max-width: 40%;
+}
+/* line 510, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.left img, .image.right img {
+  width: 100%;
+}
+/* line 515, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+/* line 520, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.fit img {
+  width: 100%;
+}
+/* line 525, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.avatar {
+  border-radius: 100%;
+}
+/* line 528, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.avatar:before {
+  display: none;
+}
+/* line 532, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.image.avatar img {
+  border-radius: 100%;
+  width: 100%;
+}
+
+/* List */
+/* line 541, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ol {
+  list-style: decimal;
+  margin: 0 0 2em 0;
+  padding-left: 1.25em;
+}
+/* line 546, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ol li {
+  padding-left: 0.25em;
+}
+
+/* line 551, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul {
+  list-style: disc;
+  margin: 0 0 2em 0;
+  padding-left: 1em;
+}
+/* line 556, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul li {
+  padding-left: 0.5em;
+}
+/* line 560, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 564, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.alt li {
+  border-top: solid 2px #efefef;
+  padding: 0.5em 0;
+}
+/* line 568, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+/* line 575, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+/* line 580, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.icons li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+}
+/* line 584, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.icons li:last-child {
+  padding-right: 0;
+}
+/* line 589, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.icons li .icon:before {
+  font-size: 1.5em;
+}
+/* line 596, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+/* line 601, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+/* line 606, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions li:last-child {
+  padding-right: 0;
+}
+/* line 612, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.small li {
+  padding: 0 0.5em 0 0;
+}
+/* line 618, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.vertical li {
+  display: block;
+  padding: 1em 0 0 0;
+}
+/* line 622, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.vertical li:first-child {
+  padding-top: 0;
+}
+/* line 626, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.vertical li > * {
+  margin-bottom: 0;
+}
+/* line 632, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.vertical.small li {
+  padding: 0.5em 0 0 0;
+}
+/* line 635, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.vertical.small li:first-child {
+  padding-top: 0;
+}
+/* line 642, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.fit {
+  display: table;
+  margin-left: -1em;
+  padding: 0;
+  table-layout: fixed;
+  width: calc(100% + 1em);
+}
+/* line 649, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.fit li {
+  display: table-cell;
+  padding: 0 0 0 1em;
+}
+/* line 653, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.fit li > * {
+  margin-bottom: 0;
+}
+/* line 658, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.fit.small {
+  margin-left: -0.5em;
+  width: calc(100% + 0.5em);
+}
+/* line 662, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.actions.fit.small li {
+  padding: 0 0 0 0.5em;
+}
+/* line 669, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.labeled-icons {
+  list-style: none;
+  padding: 0;
+}
+/* line 673, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.labeled-icons li {
+  line-height: 1.75em;
+  margin: 1.5em 0 0 0;
+  padding-left: 2.25em;
+  position: relative;
+}
+/* line 679, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.labeled-icons li:first-child {
+  margin-top: 0;
+}
+/* line 683, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.labeled-icons li a {
+  color: inherit;
+}
+/* line 687, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+ul.labeled-icons li h3 {
+  color: #b2b2b2;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 1em;
+}
+
+/* line 699, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+dl {
+  margin: 0 0 2em 0;
+}
+
+/* Table */
+/* line 705, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.table-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+}
+
+/* line 710, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table {
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+/* line 715, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table tbody tr {
+  border: solid 1px #efefef;
+  border-left: 0;
+  border-right: 0;
+}
+/* line 720, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f7f7f7;
+}
+/* line 726, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table td {
+  padding: 0.75em 0.75em;
+}
+/* line 730, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table th {
+  color: #787878;
+  font-size: 0.9em;
+  font-weight: 400;
+  padding: 0 0.75em 0.75em 0.75em;
+  text-align: left;
+}
+/* line 738, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table thead {
+  border-bottom: solid 2px #efefef;
+}
+/* line 742, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table tfoot {
+  border-top: solid 2px #efefef;
+}
+/* line 746, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt {
+  border-collapse: separate;
+}
+/* line 751, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt tbody tr td {
+  border: solid 2px #efefef;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+/* line 756, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt tbody tr td:first-child {
+  border-left-width: 2px;
+}
+/* line 762, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt tbody tr:first-child td {
+  border-top-width: 2px;
+}
+/* line 769, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt thead {
+  border-bottom: 0;
+}
+/* line 773, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+table.alt tfoot {
+  border-top: 0;
+}
+
+/* Button */
+/* line 781, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 0.35em;
+  border: solid 3px #efefef;
+  color: #787878 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 3.15em;
+  height: calc(2.75em + 6px);
+  line-height: 2.75em;
+  min-width: 10em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+/* line 803, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+  border-color: #49bf9d;
+  color: #49bf9d !important;
+}
+/* line 808, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button:active {
+  background-color: rgba(73, 191, 157, 0.1);
+  border-color: #49bf9d;
+  color: #49bf9d !important;
+}
+/* line 814, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].icon,
+input[type="reset"].icon,
+input[type="button"].icon,
+.button.icon {
+  padding-left: 1.35em;
+}
+/* line 817, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].icon:before,
+input[type="reset"].icon:before,
+input[type="button"].icon:before,
+.button.icon:before {
+  margin-right: 0.5em;
+}
+/* line 822, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].fit,
+input[type="reset"].fit,
+input[type="button"].fit,
+.button.fit {
+  display: block;
+  margin: 0 0 1em 0;
+  min-width: 0;
+  width: 100%;
+}
+/* line 829, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].small,
+input[type="reset"].small,
+input[type="button"].small,
+.button.small {
+  font-size: 0.8em;
+}
+/* line 833, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].big,
+input[type="reset"].big,
+input[type="button"].big,
+.button.big {
+  font-size: 1.35em;
+}
+/* line 837, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+.button.special {
+  background-color: #49bf9d;
+  border-color: #49bf9d;
+  color: #ffffff !important;
+}
+/* line 842, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+.button.special:hover {
+  background-color: #5cc6a7;
+  border-color: #5cc6a7;
+}
+/* line 847, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].special:active,
+input[type="reset"].special:active,
+input[type="button"].special:active,
+.button.special:active {
+  background-color: #3eb08f;
+  border-color: #3eb08f;
+}
+/* line 853, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+input[type="submit"].disabled, input[type="submit"]:disabled,
+input[type="reset"].disabled,
+input[type="reset"]:disabled,
+input[type="button"].disabled,
+input[type="button"]:disabled,
+.button.disabled,
+.button:disabled {
+  background-color: #e7e7e7 !important;
+  border-color: #e7e7e7 !important;
+  color: #b2b2b2 !important;
+  cursor: default;
+}
+
+/* Work Item */
+/* line 864, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.work-item {
+  margin: 0 0 2em 0;
+}
+/* line 867, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.work-item .image {
+  margin: 0 0 1.5em 0;
+}
+/* line 871, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.work-item h3 {
+  font-size: 1em;
+  margin: 0 0 0.5em 0;
+}
+/* line 876, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.work-item p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+/* Header */
+/* line 885, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#header {
+  background-color: #1f1815;
+  background-attachment: scroll,								fixed;
+  background-image: url(url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png)), url(url(/assets/public/bg-a18ebf99ac784ebe3b12e0ed8314e2482c4caf100ffa8e2304e7a7df35747b5b.jpg));
+  background-position: top left,							top left;
+  background-repeat: repeat,								no-repeat;
+  background-size: auto,								auto 100%;
+  color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+  left: 0;
+  padding: 8em 4em 0 0;
+  position: fixed;
+  text-align: right;
+  top: 0;
+  width: 35%;
+}
+/* line 901, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#header strong, #header b {
+  color: #ffffff;
+}
+/* line 905, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#header h2, #header h3, #header h4, #header h5, #header h6 {
+  color: #ffffff;
+}
+/* line 909, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#header h1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.35em;
+  line-height: 1.75em;
+  margin: 0;
+}
+/* line 916, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#header .image.avatar {
+  margin: 0 0 1em 0;
+  width: 6.25em;
+}
+
+/* Footer */
+/* line 924, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer {
+  bottom: 0;
+  left: 0;
+  padding: 0 4em 6em 0;
+  position: fixed;
+  text-align: right;
+  width: 35%;
+}
+/* line 932, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .icons {
+  margin: 1em 0 0 0;
+}
+/* line 935, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .icons a {
+  color: rgba(255, 255, 255, 0.4);
+}
+/* line 940, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8em;
+  list-style: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+}
+/* line 947, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .copyright li {
+  border-left: solid 1px rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  line-height: 1em;
+  margin-left: 0.75em;
+  padding-left: 0.75em;
+}
+/* line 954, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 960, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#footer .copyright li a {
+  color: inherit;
+}
+
+/* Main */
+/* line 969, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#main {
+  margin-left: 35%;
+  max-width: 54em;
+  padding: 8em 4em 4em 4em;
+  width: calc(100% - 35%);
+}
+/* line 975, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#main > section {
+  border-top: solid 2px #efefef;
+  margin: 4em 0 0 0;
+  padding: 4em 0 0 0;
+}
+/* line 980, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+#main > section:first-child {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Poptrox */
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 995, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background: #fff;
+  border-radius: 0.35em;
+  box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding-bottom: 3em;
+}
+/* line 1004, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .loader {
+  text-decoration: none;
+  -moz-animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+  -ms-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  font-size: 1.5em;
+  height: 1em;
+  left: 50%;
+  line-height: 1em;
+  margin: -0.5em 0 0 -0.5em;
+  position: absolute;
+  top: 50%;
+  width: 1em;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+.poptrox-popup .loader:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 1016, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .loader:before {
+  content: '\f1ce';
+}
+/* line 1021, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .caption {
+  background: #fff;
+  bottom: 0;
+  cursor: default;
+  font-size: 0.9em;
+  height: 3em;
+  left: 0;
+  line-height: 2.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+/* line 1035, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-next,
+.poptrox-popup .nav-previous {
+  text-decoration: none;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background: rgba(0, 0, 0, 0.01);
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+.poptrox-popup .nav-next:before,
+.poptrox-popup .nav-previous:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 1048, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-next:before,
+.poptrox-popup .nav-previous:before {
+  color: #fff;
+  font-size: 2.5em;
+  height: 1em;
+  line-height: 1em;
+  margin-top: -0.75em;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 1.5em;
+}
+/* line 1061, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-next {
+  right: 0;
+}
+/* line 1064, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-next:before {
+  content: '\f105';
+  right: 0;
+}
+/* line 1070, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-previous {
+  left: 0;
+}
+/* line 1073, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .nav-previous:before {
+  content: '\f104';
+  left: 0;
+}
+/* line 1079, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .closer {
+  text-decoration: none;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  height: 4em;
+  line-height: 4em;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 4em;
+  z-index: 2;
+}
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_mixins.scss */
+.poptrox-popup .closer:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+/* line 1094, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup .closer:before {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  border-radius: 100%;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  content: '\f00d';
+  display: block;
+  font-size: 1em;
+  height: 1.75em;
+  left: 50%;
+  line-height: 1.75em;
+  margin: -0.875em 0 0 -0.875em;
+  position: absolute;
+  top: 50%;
+  width: 1.75em;
+}
+/* line 1112, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup:hover .nav-next,
+.poptrox-popup:hover .nav-previous {
+  opacity: 0.5;
+}
+/* line 1116, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup:hover .nav-next:hover,
+.poptrox-popup:hover .nav-previous:hover {
+  opacity: 1.0;
+}
+/* line 1121, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup:hover .closer {
+  opacity: 0.5;
+}
+/* line 1124, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+.poptrox-popup:hover .closer:hover {
+  opacity: 1.0;
+}
+
+/* Touch */
+/* line 1137, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body.is-touch .image.thumb:before {
+  opacity: 0.5 !important;
+}
+/* line 1141, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body.is-touch .image.thumb:after {
+  display: none !important;
+}
+/* line 1147, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body.is-touch #header {
+  background-attachment: scroll;
+  background-size: auto, cover;
+}
+/* line 1153, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+body.is-touch .poptrox-popup .nav-next,
+body.is-touch .poptrox-popup .nav-previous,
+body.is-touch .poptrox-popup .closer {
+  opacity: 1.0 !important;
+}
+
+/* XLarge */
+@media screen and (max-width: 1800px) {
+  /* Basic */
+  /* line 1168, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  body, input, select, textarea {
+    font-size: 12pt;
+  }
+}
+/* Large */
+@media screen and (max-width: 1280px) {
+  /* Header */
+  /* line 1183, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header {
+    padding: 6em 3em 3em 3em;
+    width: 30%;
+  }
+  /* line 1187, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 {
+    font-size: 1.25em;
+  }
+  /* line 1190, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 br {
+    display: none;
+  }
+
+  /* Footer */
+  /* line 1198, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer {
+    padding: 0 3em 5em 3em;
+    width: 30%;
+  }
+  /* line 1203, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer .copyright li {
+    border-left-width: 0;
+    display: block;
+    line-height: 2.25em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  /* Main */
+  /* line 1215, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #main {
+    margin-left: 30%;
+    max-width: none;
+    padding: 6em 3em 3em 3em;
+    width: calc(100% - 30%);
+  }
+}
+/* Medium */
+@media screen and (max-width: 980px) {
+  /* Basic */
+  /* line 1233, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
+    display: none;
+  }
+
+  /* List */
+  /* line 1243, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.icons li .icon {
+    font-size: 1.25em;
+  }
+
+  /* Header */
+  /* line 1252, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header {
+    background-attachment: scroll;
+    background-position: top left,	center center;
+    background-size: auto,		cover;
+    left: auto;
+    padding: 6em 4em;
+    position: relative;
+    text-align: center;
+    top: auto;
+    width: 100%;
+  }
+  /* line 1263, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 {
+    font-size: 1.75em;
+  }
+  /* line 1266, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 br {
+    display: inline;
+  }
+
+  /* Footer */
+  /* line 1274, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer {
+    background-attachment: scroll;
+    background-color: #1f1815;
+    background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+    background-position: top left,						bottom center;
+    background-repeat: repeat,							no-repeat;
+    background-size: auto,							cover;
+    bottom: auto;
+    left: auto;
+    padding: 4em 4em 6em 4em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 1288, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer .icons {
+    margin: 0 0 1em 0;
+  }
+  /* line 1292, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer .copyright {
+    margin: 0 0 1em 0;
+  }
+  /* line 1295, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer .copyright li {
+    border-left-width: 1px;
+    display: inline-block;
+    line-height: 1em;
+    margin-left: 0.75em;
+    padding-left: 0.75em;
+  }
+
+  /* Main */
+  /* line 1307, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #main {
+    margin: 0;
+    padding: 6em 4em;
+    width: 100%;
+  }
+}
+/* Small */
+@media screen and (max-width: 736px) {
+  /* Basic */
+  /* line 1323, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 1327, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  h2 {
+    font-size: 1.2em;
+  }
+
+  /* line 1331, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  h3 {
+    font-size: 1em;
+  }
+
+  /* Section/Article */
+  /* line 1338, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  section.special, article.special {
+    text-align: center;
+  }
+
+  /* line 1345, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  header.major h2 {
+    font-size: 1.35em;
+  }
+
+  /* List */
+  /* line 1355, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.labeled-icons li {
+    padding-left: 2em;
+  }
+  /* line 1358, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.labeled-icons li h3 {
+    line-height: 1.75em;
+  }
+
+  /* Header */
+  /* line 1367, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header {
+    padding: 2.25em 1.5em;
+  }
+  /* line 1370, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 {
+    font-size: 1.35em;
+  }
+
+  /* Footer */
+  /* line 1377, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer {
+    padding: 2.25em 1.5em;
+  }
+
+  /* Main */
+  /* line 1383, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #main {
+    padding: 2.25em 1.5em 0.25em 1.5em;
+  }
+  /* line 1386, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #main > section {
+    margin: 2.25em 0 0 0;
+    padding: 2.25em 0 0 0;
+  }
+
+  /* Poptrox */
+  /* line 1394, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  .poptrox-popup {
+    border-radius: 0;
+  }
+  /* line 1399, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  .poptrox-popup .nav-next:before,
+  .poptrox-popup .nav-previous:before {
+    margin-top: -1em;
+  }
+}
+/* XSmall */
+@media screen and (max-width: 480px) {
+  /* List */
+  /* line 1416, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions {
+    margin: 0 0 2em 0;
+  }
+  /* line 1419, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions li {
+    display: block;
+    padding: 1em 0 0 0;
+    text-align: center;
+    width: 100%;
+  }
+  /* line 1425, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions li:first-child {
+    padding-top: 0;
+  }
+  /* line 1429, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions li > * {
+    margin: 0 !important;
+    width: 100%;
+  }
+  /* line 1434, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions li > *.icon:before {
+    margin-left: -2em;
+  }
+  /* line 1442, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions.small li {
+    padding: 0.5em 0 0 0;
+  }
+  /* line 1445, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  ul.actions.small li:first-child {
+    padding-top: 0;
+  }
+
+  /* Header */
+  /* line 1455, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header {
+    padding: 4.5em 1.5em;
+  }
+  /* line 1459, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #header h1 br {
+    display: none;
+  }
+
+  /* Footer */
+  /* line 1469, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
+  #footer .copyright li {
+    border-left-width: 0;
+    display: block;
+    line-height: 2.25em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

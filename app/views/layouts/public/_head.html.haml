@@ -1,0 +1,8 @@
+%head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title SimpleCms
+  %meta{:charset => "utf-8"}/
+  %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  /%link{:href => "assets/css/main.css", :rel => "stylesheet"}/
+  = stylesheet_link_tag    'public', media: 'all', 'data-turbolinks-track' => true
+  = csrf_meta_tags

@@ -1,27 +1,19 @@
 !!!
-%html{:lang => "en"}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "utf-8"}/
-    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
-    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
-    %meta{:content => "A simple CMS application built in rails", :name => "description"}/
-    %meta{:content => "Pat Horsley", :name => "author"}/
-    %title Simple Rails CMS
-    = stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'admin', 'data-turbolinks-track' => true
-    = csrf_meta_tags
-    
-  %body
-    #wrapper
-      / =render "layouts/admin/sidebar"
-      %h2 TEMPLATE MISSING. THIS IS APPLICATION.HTML.HAML 
-      #page-content-wrapper
-        .container-fluid
-          .row
-            .col-lg-12
-              .notices
-                =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
-                =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
-              %h1 this is still application
-              = yield
+/
+  Strata by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+%html
+  =render 'layouts/public/head'
+  %body#top
+    =render 'layouts/public/header'
+    #main
+      %section
+        =render 'layouts/public/notices' if flash[:notice] || flash[:alert]
+        = yield
+      /=render 'layouts/public/section_1'
+      
+    =render 'layouts/public/footer'
+
+    = javascript_include_tag 'public', 'data-turbolinks-track' => true
+

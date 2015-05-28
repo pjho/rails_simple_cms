@@ -12,6 +12,13 @@ class ApplicationController < ActionController::Base
     redirect_to controller: controller_name, action: params[:action], id: object.to_param, status: 301
   end
 
+
+  # Throw 404 page
+  def not_found
+    raise ActionController::RoutingError.new('Not Found')
+  end
+
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception

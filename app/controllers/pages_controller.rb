@@ -9,10 +9,12 @@ class PagesController < ApplicationController
 
   def home
     @page = Page.find(1)
-    render :show
+    render :show, layout: "layouts/public"
   end
 
   def show
+    not_found if @page.published == false &&  !admin_signed_in?
+
     redirect_to_good_slug(@page) and return if bad_slug?(@page)
     render layout: "layouts/public"
   end

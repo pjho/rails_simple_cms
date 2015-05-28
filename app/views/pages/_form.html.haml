@@ -1,0 +1,33 @@
+= form_for @page, :url => "#{pages_path}/#{@page.id}" do |f|
+  - if @page.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@page.errors.count, "error")} prohibited this page from being saved:"
+      %ul
+        - @page.errors.full_messages.each do |message|
+          %li= message
+
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: "form-control"
+
+  .form-group
+    = f.label :slug
+    = f.text_field :slug, class: "form-control"
+
+  .form-group
+    = f.label :content
+    = f.text_area :content, size: "20x9", class: "form-control"
+
+  .form-group
+    = f.label "Publish Status"
+    .radio
+      %label
+        =f.radio_button :published, true
+        published
+        &nbsp;&nbsp;
+      %label
+        =f.radio_button :published, false
+        unpublished
+
+  .actions.form-group
+    = f.submit 'Save', class: "btn btn-primary"

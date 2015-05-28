@@ -7,7 +7,6 @@ class PagesController < ApplicationController
     @pages = Page.all
   end
 
-
   def home
     @page = Page.find(1)
     render :show
@@ -29,7 +28,7 @@ class PagesController < ApplicationController
     @page = Page.new(page_params)
 
       if @page.save
-        redirect_to @page, notice: 'Page was successfully created.'
+        redirect_to edit_page_path(@page), notice: 'Page was successfully created.'
       else
         render :new
       end
@@ -37,7 +36,7 @@ class PagesController < ApplicationController
 
   def update
       if @page.update(page_params)
-        redirect_to @page, notice: 'Page was successfully updated.'
+        redirect_to edit_page_path(@page), notice: 'Page was successfully updated.'
       else
         render :edit
       end

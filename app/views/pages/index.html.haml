@@ -1,0 +1,31 @@
+%h1
+  All Pages | #{link_to 'Add New Page', new_page_path, {class: 'btn btn-primary'}}
+%table.table.table-striped.table-hover
+  %thead
+    %tr
+      %th Page ID
+      %th Title
+      %th.text-center Published
+      %th Date Created
+      %th Last Modified
+      %th{:colspan => "3"}
+  %tbody
+    - @pages.each do |page|
+      %tr
+        %td= page.id
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to page.title, edit_page_path(page)
+        %td.text-center
+          %span{:class => "glyphicon glyphicon-#{page.published ? 'ok-sign text-success' : 'remove-sign text-danger'}"}
+        %td= page.created_at.strftime("%d %b %Y")
+        %td= page.updated_at .strftime("%d %b %Y")
+        %td
+          %span.glyphicon.glyphicon-share
+          = link_to 'View Page', page
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to 'Edit Page', edit_page_path(page)
+        %td
+          %span.glyphicon.glyphicon-trash
+          = link_to 'Delete Page', "#{pages_path}/#{page.id}", method: :delete, data: { confirm: 'Are you sure?' }

@@ -10,10 +10,9 @@
     #main
       %section
         =render 'layouts/public/notices' if flash[:notice] || flash[:alert]
-        %h1 this is a public page
         = yield
       
-      =render 'layouts/public/section_1'
+      /=render 'layouts/public/section_1'
       
     
     =render 'layouts/public/footer'

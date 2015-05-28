@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150527014335) do
+ActiveRecord::Schema.define(version: 20150528015121) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20150527014335) do
     t.datetime "updated_at",                 null: false
   end
 
+  add_index "pages", ["content"], name: "index_pages_on_content", unique: true
   add_index "pages", ["published"], name: "index_pages_on_published"
 
 end

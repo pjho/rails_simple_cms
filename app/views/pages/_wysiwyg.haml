@@ -1,0 +1,81 @@
+#alerts
+.btn-toolbar{"data-role" => "editor-toolbar", "data-target" => "#editor"}
+
+
+  .btn-group
+    %a.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :title => "Format"}
+      %i.glyphicon.glyphicon-text-size
+       
+      %b.caret
+    %ul.dropdown-menu
+      %li
+        %a{"data-edit" => "format-h1"} h1
+      %li
+        %a{"data-edit" => "format-h2"} h2
+      %li
+        %a{"data-edit" => "format-h3"} h3
+      %li
+        %a{"data-edit" => "format-h4"} h4
+      %li
+        %a{"data-edit" => "format-h5"} h5
+      %li
+        %a{"data-edit" => "format-p", :title => "Paragraph"} p
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "format-pre", :title => "Preformatted text"} pre
+    %a.btn.btn-default{"data-edit" => "format-blockquote"} quote
+    %a.btn.btn-default{"data-edit" => "format-section"} section
+
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "bold", :title => "Bold (Ctrl/Cmd+B)"}
+      %i.glyphicon.glyphicon-bold
+    %a.btn.btn-default{"data-edit" => "italic", :title => "Italic (Ctrl/Cmd+I)"}
+      %i.glyphicon.glyphicon-italic
+    %a.btn.btn-default{"data-edit" => "strikethrough", :title => "Strikethrough"}
+      %span{"style" => "text-decoration:line-through;"}
+        A
+    %a.btn.btn-default{"data-edit" => "underline", :title => "Underline (Ctrl/Cmd+U)"}
+      %span{"style" => "text-decoration:underline;"}
+        A
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "insertunorderedlist", :title => "Bullet list"}
+      %i.glyphicon.glyphicon-list
+    %a.btn.btn-default{"data-edit" => "insertorderedlist", :title => "Number list"}
+      %i.glyphicon.glyphicon-list
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "justifyleft", :title => "Align Left (Ctrl/Cmd+L)"}
+      %i.glyphicon.glyphicon-align-left
+    %a.btn.btn-default{"data-edit" => "justifycenter", :title => "Center (Ctrl/Cmd+E)"}
+      %i.glyphicon.glyphicon-align-center
+    %a.btn.btn-default{"data-edit" => "justifyright", :title => "Align Right (Ctrl/Cmd+R)"}
+      %i.glyphicon.glyphicon-align-right
+    %a.btn.btn-default{"data-edit" => "justifyfull", :title => "Justify (Ctrl/Cmd+J)"}
+      %i.glyphicon.glyphicon-align-justify
+
+  .btn-group
+    %a.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :title => "Hyperlink"}
+      %i.glyphicon.glyphicon-link
+    .dropdown-menu.input-append
+      %input.span2{"data-edit" => "createLink", :placeholder => "URL", :type => "text"}/
+      %button.btn{:type => "button"} Add
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "unlink", :title => "Remove Hyperlink"}
+      %i.glyphicon.glyphicon-link{ "style" => "color:#c5c5c5; "}
+        
+  .btn-group
+    %a#pictureBtn.btn.btn-default{:title => "Insert picture (or just drag  drop)"}
+      %i.glyphicon.glyphicon-picture
+      %input{"data-edit" => "insertImage", "data-role" => "magic-overlay", "data-target" => "#pictureBtn", :type => "file"}/
+
+  .btn-group
+    %a.btn.btn-default{"data-edit" => "undo", :title => "Undo (Ctrl/Cmd+Z)"}
+      %i.glyphicon.glyphicon-menu-left
+    %a.btn.btn-default{"data-edit" => "redo", :title => "Redo (Ctrl/Cmd+Y)"}
+      %i.glyphicon.glyphicon-repeat
+    %a.btn.btn-default{"data-edit" => "html", "title" => "Clear Formatting"}
+      %i.glyphicon.glyphicon-pencil
+

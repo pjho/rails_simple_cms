@@ -1,0 +1,11 @@
+%head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %meta{:charset => "utf-8"}/
+  %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+  %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %meta{:content => "A simple CMS application built in rails", :name => "description"}/
+  %meta{:content => "Pat Horsley", :name => "author"}/
+  %title Simple Rails CMS
+  = stylesheet_link_tag    'admin', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'admin', 'data-turbolinks-track' => true
+  = csrf_meta_tags

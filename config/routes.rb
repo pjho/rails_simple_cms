@@ -1,21 +1,17 @@
 Rails.application.routes.draw do
   root 'pages#home'
   devise_for :admins
-  resources :pages, :only => [:show,:home], :path => '' 
-  resources :pages, :except => [:show,:home], :path => 'admin/pages' 
+
+  resources :pages, :only => [:show,:home], :path => 'page' 
+
+  get '/cms' => 'cms#index'
+
+  namespace :cms do
+    resources :pages, :except => [:show,:home]
+  end
 
 
-  # resources :pages, :except => [:home], :path => 'admin/pages'
-
-  # resources :pages, :only => [:index, :new, :create, :edit, :update, :destroy], :path => 'admin/pages' 
-  # resources :pages, :only => [:show, :home], :path => '' 
-  
-  
-  # 'admin/pages' resources :pages, 
-  #   :only => [:show,:home], 
-  #   :path => '' resources :pages, :except => [:show,:home]
-
-  
+  #
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

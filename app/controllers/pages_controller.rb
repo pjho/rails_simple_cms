@@ -1,52 +1,15 @@
 class PagesController < ApplicationController
-  before_action :set_page, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!, except:[:show,:home]
-  layout "admin"
+  before_action :set_page, only: [:show]
+  layout "public"
   
-  def index
-    @pages = Page.all
-  end
-
   def home
     @page = Page.find(1)
-    render :show, layout: "layouts/public"
+    render :show
   end
 
   def show
     not_found if @page.published == false &&  !admin_signed_in?
-
     redirect_to_good_slug(@page) and return if bad_slug?(@page)
-    render layout: "layouts/public"
-  end
-
-  def new
-    @page = Page.new
-  end
-
-  def edit
-  end
-
-  def create
-    @page = Page.new(page_params)
-
-      if @page.save
-        redirect_to edit_page_path(@page), notice: 'Page was successfully created.'
-      else
-        render :new
-      end
-  end
-
-  def update
-      if @page.update(page_params)
-        redirect_to edit_page_path(@page), notice: 'Page was successfully updated.'
-      else
-        render :edit
-      end
-  end
-
-  def destroy
-    @page.destroy
-      redirect_to pages_url, notice: 'Page was successfully destroyed.'
   end
 
   private

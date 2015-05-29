@@ -18,4 +18,4 @@
 //  Bootstrap Wysywig - In real project these should be loaded only on wysywig pages.
 //= require bootstrap-wysiwyg/jquery.hotkeys
 //= require bootstrap-wysiwyg/bootstrap-wysiwyg
-//= require admin/wysiwyg-init
+//= require cms/wysiwyg-init

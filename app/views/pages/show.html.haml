@@ -7,6 +7,6 @@
 - if admin_signed_in?
   %ul.actions
     %li
-      = link_to 'Edit Page', edit_page_path(@page), class: "button small"
+      = link_to 'Edit Page', edit_cms_page_path(@page), class: "button small"
     %li
-      = link_to 'All Pages', pages_path, class: "button small"
+      = link_to 'All Pages', cms_pages_path, class: "button small"

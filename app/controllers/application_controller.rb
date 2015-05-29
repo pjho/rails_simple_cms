@@ -19,6 +19,10 @@ class ApplicationController < ActionController::Base
   end
 
 
+  def after_sign_in_path_for(resource)
+    cms_path
+  end
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
@@ -33,7 +37,7 @@ class ApplicationController < ActionController::Base
     if admin_signed_in?
       super
     else
-      redirect_to root_path, #"http://localhost:3000/1-this-is-a-page/", 
+      redirect_to root_path, 
         notice: %Q[ You need to sign in to perform that action. #{view_context.link_to "Sign In", new_admin_session_path}.],
         flash: { html_safe: true }
     end

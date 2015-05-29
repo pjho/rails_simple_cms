@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "en"}
+  =render "layouts/cms/head"
+  %body
+    #wrapper
+      =render "layouts/cms/sidebar"
+      #page-content-wrapper
+        .container-fluid
+          .row
+            .col-lg-12
+              - if flash[:notice] or flash[:alert]
+                .notices
+                  =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
+                  =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
+              = yield

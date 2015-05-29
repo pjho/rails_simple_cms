@@ -1,0 +1,17 @@
+- if @status.to_s == "404"
+  .post
+    %header.post-header
+      %h1.post-title 404 - Page not found
+    %article.post-content
+      %p Uh Oh! Looks like I can't find what you're looking for. Have a kitten instead.
+      %p
+        = image_tag "public/404.jpg", alt: "Have a Kitten"
+- else
+  .error
+    = image_tag 'exception_handler/alert.png', width: "150", alt: "Error!", title: "Sorry, A Server Error Occurred", class: "alert"
+    .message
+      %strong= details[:name]
+      %span= details[:message]
+    .contact
+      - ExceptionHandler.config.social.each do |item, address|
+        = link_to image_tag("exception_handler/contact/#{item}.png", title: item.to_s.titleize), address, target: :blank

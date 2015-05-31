@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   namespace :cms do
     resources :pages, :except => [:show,:home]
+    resources :admins, :controller => "admins"
   end
 
 

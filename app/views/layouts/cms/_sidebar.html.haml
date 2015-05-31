@@ -12,6 +12,8 @@
     %li
       %a{:href => "#"} Menus
     %li
+      = link_to "Admins", cms_admins_path
+    %li
       %a{:href => "#"} Settings
     %li
       =link_to "Sign Out", destroy_admin_session_path, :method => :delete

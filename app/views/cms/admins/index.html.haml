@@ -1,0 +1,32 @@
+%h1
+  All Admins | #{link_to 'Add New Admin', new_cms_admin_path, {class: 'btn btn-primary'}}
+%table.table.table-striped.table-hover
+  %thead
+    %tr
+      %th Admin ID
+      %th Name
+      %th Email
+      %th.text-center Super Admin?
+      %th Date Created
+      %th{:colspan => "22"}
+  %tbody
+    - @admins.each do |admin|
+      %tr
+        %td= admin.id
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to admin.name, edit_cms_admin_path(admin)
+        %td
+          = admin.email
+        %td.text-center
+          %span{:class => "glyphicon glyphicon-#{false ? 'ok-sign text-success' : 'remove-sign text-danger'}"}
+        %td= admin.created_at.strftime("%d %b %Y")
+        -# %td
+          -# %span.glyphicon.glyphicon-share
+          -# = link_to 'View Admin', admin
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to 'Edit Admin', edit_cms_admin_path(admin)
+        %td
+          %span.glyphicon.glyphicon-trash
+          = link_to 'Delete Admin', "#{cms_admins_path}/#{admin.id}", method: :delete, data: { confirm: 'Are you sure?' }

@@ -19,6 +19,7 @@ class ApplicationController < ActionController::Base
   end
 
 
+  # Devise redirect on sign in
   def after_sign_in_path_for(resource)
     cms_path
   end
@@ -42,4 +43,12 @@ class ApplicationController < ActionController::Base
         flash: { html_safe: true }
     end
   end
+
+  def authenticateSuper!
+    unless current_admin.sudo
+      redirect_to cms_path,
+      notice: "You do not have permission to perform that action."
+    end
+  end
+
 end

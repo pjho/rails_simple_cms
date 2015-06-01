@@ -1,5 +1,8 @@
 %h1
-  Editing Admin - #{@admin.name} &nbsp; 
-  .btn-group
-    = link_to 'Back to Manage Admins', cms_admins_path, class: "btn btn-default"
+  = current_admin.id == @admin.id ? "Edit Profile" : "Editing Admin - #{@admin.name}"
+  - if current_admin.sudo && current_admin.id != @admin.id 
+    .btn-group
+      = link_to 'Back to Manage Admins', cms_admins_path, class: "btn btn-default"
 = render 'form'
+
+

@@ -14,17 +14,21 @@
   .form-group
     = f.label :email
     = f.text_field :email, class: "form-control"
-
-  -# .form-group
-  -#   = f.label "Publish Status"
-  -#   .radio
-  -#     %label
-  -#       =f.radio_button :published, true
-  -#       published
-  -#       &nbsp;&nbsp;
-  -#     %label
-  -#       =f.radio_button :published, false
-  -#       unpublished
+  
+  -#This form can be used to update an admin's own profile
+    Only sudo users should see the sudo control. They also shouldn't be able 
+    to remove their own sudo capability so don't show it.
+  - if current_admin.sudo && current_admin.id != @admin.id
+    .form-group
+      = f.label "SuperAdmin"
+      .radio
+        %label
+          =f.radio_button :sudo, true
+          enabled
+          &nbsp;&nbsp;
+        %label
+          =f.radio_button :sudo, false
+          disabled
 
   .form-group
     = f.label :password

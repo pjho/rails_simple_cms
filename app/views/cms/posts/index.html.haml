@@ -1,0 +1,31 @@
+%h1
+  All posts | #{link_to 'Add New Post', new_cms_post_path, {class: 'btn btn-primary'}}
+%table.table.table-striped.table-hover
+  %thead
+    %tr
+      %th Post ID
+      %th Title
+      %th.text-center Published
+      %th Date Created
+      %th Last Modified
+      %th{:colspan => "3"}
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td= post.id
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to post.title, edit_cms_post_path(post)
+        %td.text-center
+          %span{:class => "glyphicon glyphicon-#{post.published ? 'ok-sign text-success' : 'remove-sign text-danger'}"}
+        %td= post.created_at.strftime("%d %b %Y")
+        %td= post.updated_at .strftime("%d %b %Y")
+        %td
+          %span.glyphicon.glyphicon-share
+          = link_to 'View Post', post
+        %td
+          %span.glyphicon.glyphicon-edit
+          = link_to 'Edit Post', edit_cms_post_path(post)
+        %td
+          %span.glyphicon.glyphicon-trash
+          = link_to 'Delete Post', "#{cms_posts_path}/#{post.id}", method: :delete, data: { confirm: 'Are you sure?' }

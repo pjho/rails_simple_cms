@@ -1,8 +1,8 @@
 %h2  
 = form_for @admin, :url => "#{cms_admins_path}/#{@admin.id}" do |f|
   - if @admin.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@admin.errors.count, "error")} prohibited this admin from being saved:"
+    #error_explanation.form-errors.bg-danger
+      %h4= "#{pluralize(@admin.errors.count, "error")} prohibited this admin from being saved:"
       %ul
         - @admin.errors.full_messages.each do |message|
           %li= message

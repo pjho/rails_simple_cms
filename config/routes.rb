@@ -2,12 +2,14 @@ Rails.application.routes.draw do
   root 'pages#home'
   devise_for :admins
 
-  resources :pages, :only => [:show,:home], :path => 'page' 
+  resources :pages, :only => [:show,:home], :path => '' 
+  resources :posts, :only => [:show]
 
   get '/cms' => 'cms#index'
 
   namespace :cms do
     resources :pages, :except => [:show,:home]
+    resources :posts, :except => [:show]
     resources :admins, :controller => "admins"
   end
 

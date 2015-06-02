@@ -1,0 +1,12 @@
+%article
+  %h1 
+    =@post.title
+  =@post.content.html_safe
+
+
+- if admin_signed_in?
+  %ul.actions
+    %li
+      = link_to 'Edit post', edit_cms_post_path(@post), class: "button small"
+    %li
+      = link_to 'All posts', cms_posts_path, class: "button small"

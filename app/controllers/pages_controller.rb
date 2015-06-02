@@ -17,7 +17,4 @@ class PagesController < ApplicationController
       @page = Page.find(params[:id])
     end
 
-    def page_params
-      params.require(:page).permit(:title, :slug, :content, :published)
-    end
 end

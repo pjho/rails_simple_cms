@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'posts#index'
   devise_for :admins
 
   resources :posts, :only => [:show,:index]

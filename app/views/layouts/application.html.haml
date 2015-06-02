@@ -12,8 +12,5 @@
         =render 'layouts/public/notices' if flash[:notice] || flash[:alert]
         = yield
       /=render 'layouts/public/section_1'
-      
     =render 'layouts/public/footer'
-
     = javascript_include_tag 'public', 'data-turbolinks-track' => true
-

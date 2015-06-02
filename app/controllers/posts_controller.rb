@@ -7,6 +7,6 @@ class PostsController < ApplicationController
   end
   
   def index
-    @posts = Post.all
+    @posts = Post.where( published: true )
   end
 end

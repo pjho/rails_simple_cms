@@ -38,3 +38,19 @@ body { padding-top: 50px; }
 .tab-pane{
   padding:20px
 }
+
+
+.menu{
+  margin-top:40px;
+
+  a{
+    border-bottom:0 none;    
+    &:hover{
+
+    }
+  }
+  li{
+    list-style-type:none;
+  }
+}
+

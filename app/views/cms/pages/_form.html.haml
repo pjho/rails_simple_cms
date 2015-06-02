@@ -16,10 +16,12 @@
 
   .form-group
     = f.label :content
-    =render 'cms/shared/wysiwyg'
-    #editor.lead
-      = @page.content.html_safe
-    = f.hidden_field :content
+    .row
+      .col-md-6
+        #wmd-button-bar-content
+        = f.text_area :content, size: "20x20", class: "wmd-input form-control", id: "wmd-input-content"
+      .col-md-6
+        #wmd-preview-content.wmd-preview
 
   .form-group
     = f.label "Publish Status"

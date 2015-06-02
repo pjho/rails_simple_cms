@@ -1,5 +1,22 @@
 body { padding-top: 50px; }
 
+// Hack so I don't have to load font-awesome. 
+// Wouldn't do this in production.
+.fa{ @extend .glyphicon; }
+.fa-bold { @extend .glyphicon-bold; }
+.fa-italic { @extend .glyphicon-italic; }
+.fa-link { @extend .glyphicon-link; }
+.fa-picture-o { @extend .glyphicon-picture; }
+.fa-quote-left {  @extend .glyphicon-comment;  }
+.fa-code { @extend .glyphicon-console; }
+.fa-list-ul{ @extend .glyphicon-list; }
+.fa-list-ol { @extend .glyphicon-list-alt; }
+.fa-font { @extend .glyphicon-font; }
+.fa-undo { @extend .glyphicon-remove-circle; }
+.fa-repeat { @extend .glyphicon-repeat; }
+.fa-info { @extend .glyphicon-search; }
+.wmd-preview{ margin-top:32px; height:414px; }
+
 .notices{
   .flash{
     padding: 15px;
@@ -21,43 +38,4 @@ body { padding-top: 50px; }
 
 .tab-pane{
   padding:20px
-}
-
-#scmsEditor{
-	max-height: 250px;
-	height: 250px;
-	background-color: white;
-	border-collapse: separate;
-  border: 1px solid rgb(204, 204, 204);
- 	padding: 4px;
- 	box-sizing: content-box;
- 	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
- 	box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
-	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
-	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
-	overflow: scroll;
-	outline: none;
-}
-#scmsEditor:focus{
-  border-color:rgba(82, 168, 236, 0.8);
-  outline:0;
-  outline:thin dotted \9;
-  box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
-
-div[data-role="editor-toolbar"] {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.dropdown-menu a {
-	cursor: pointer;
-}
-.btn-toolbar {
-	padding: 10px 0px 10px 0px;
-}
-.placeholderText {
-	color: #777;
 }

@@ -1,8 +1,7 @@
 %article
   %h1 
     =@post.title
-  =@post.content.html_safe
-
+  =markdown(@post.content.html_safe)
 
 - if admin_signed_in?
   %ul.actions

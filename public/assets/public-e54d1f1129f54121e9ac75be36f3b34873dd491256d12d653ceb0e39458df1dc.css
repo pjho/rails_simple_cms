@@ -5122,7 +5122,7 @@ input[type="radio"] + label:before {
   -webkit-transition: opacity 0.2s ease-in-out;
   -ms-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  background: url("images/overlay.png");
+  background: url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png);
   border-radius: 0.35em;
   content: '';
   display: block;
@@ -5167,7 +5167,7 @@ input[type="radio"] + label:before {
 }
 /* line 482, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
 .image.thumb:hover:before {
-  background: url("images/overlay.png"), url("images/overlay.png");
+  background: url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png), url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png);
   opacity: 1.0;
 }
 /* line 489, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_main.scss */
@@ -5596,7 +5596,7 @@ input[type="button"]:disabled,
 #header {
   background-color: #1f1815;
   background-attachment: scroll,								fixed;
-  background-image: url(url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png)), url(url(/assets/public/bg-a18ebf99ac784ebe3b12e0ed8314e2482c4caf100ffa8e2304e7a7df35747b5b.jpg));
+  background-image: url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png), url(/assets/public/bg-d4153da02a192b7753cb75493a1f9cc26f44f62d8d4f37df3cc7265477b77057.jpg);
   background-position: top left,							top left;
   background-repeat: repeat,								no-repeat;
   background-size: auto,								auto 100%;
@@ -6044,7 +6044,7 @@ body.is-touch .poptrox-popup .closer {
   #footer {
     background-attachment: scroll;
     background-color: #1f1815;
-    background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+    background-image: url(/assets/public/overlay-2613ee21f97feec378b8cfbb6f25a285c5e9a422dc7ef80f9720be2b78e7a101.png), url(/assets/public/bg-d4153da02a192b7753cb75493a1f9cc26f44f62d8d4f37df3cc7265477b77057.jpg);
     background-position: top left,						bottom center;
     background-repeat: repeat,							no-repeat;
     background-size: auto,							cover;
@@ -6212,4 +6212,22 @@ body.is-touch .poptrox-popup .closer {
     margin-left: 0;
     padding-left: 0;
   }
+}
+/* line 1, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_custom.scss */
+.notices .flash {
+  padding: 15px;
+}
+
+/* line 5, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_custom.scss */
+.bg-success {
+  background-color: #dff0d8;
+}
+
+/* line 9, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_custom.scss */
+.field {
+  margin-bottom: 1em;
+}
+/* line 12, /Users/pat/Desktop/SGS/Rails/simple_cms/app/assets/stylesheets/public/_custom.scss */
+.field label {
+  margin-bottom: 0.8em;
 }

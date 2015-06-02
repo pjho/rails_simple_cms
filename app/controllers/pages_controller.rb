@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show]
-  layout "public"
+  # layout "public"
   
   def home
     @page = Page.find(1)

@@ -1,0 +1,28 @@
+%nav.navbar.navbar-inverse
+  .container-fluid
+    .navbar-header
+      %button.navbar-toggle.collapsed{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      =link_to "SimpleCMS", cms_path, class: "navbar-brand"
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "/"} 
+            %span.glyphicon.glyphicon-home
+            Visit Site
+            
+        %li
+          =link_to destroy_admin_session_path, :method => :delete do
+            %span.glyphicon.glyphicon-flash
+            Sign Out 
+
+        %li.dropdown
+          %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            Actions
+            %span.caret
+          %ul.dropdown-menu{:role => "menu"}
+            =render "layouts/cms/menu_items"

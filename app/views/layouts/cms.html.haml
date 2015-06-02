@@ -2,6 +2,7 @@
 %html{:lang => "en"}
   =render "layouts/cms/head"
   %body
+    =render "layouts/cms/navbar"
     #wrapper
       =render "layouts/cms/sidebar"
       #page-content-wrapper
@@ -13,3 +14,5 @@
                   =content_tag :div, flash[:notice], class: "flash bg-success" if flash[:notice]
                   =content_tag :div, flash[:alert], class: "flash bg-danger" if flash[:alert]
               = yield
+        -# %a.btn.btn-default{"href" => "#menu-toggle", "id" => "menu-toggle"}
+          Toggle Menu

@@ -19,3 +19,5 @@
 //= require bootstrap-wysiwyg/jquery.hotkeys
 //= require bootstrap-wysiwyg/bootstrap-wysiwyg
 //= require cms/wysiwyg-init
+
+//= require cms/custom

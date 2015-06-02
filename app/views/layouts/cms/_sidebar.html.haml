@@ -1,33 +1,4 @@
 / Sidebar
 #sidebar-wrapper
   %ul.sidebar-nav
-    %li.sidebar-brand
-      = link_to "SimpleCMS", cms_path
-    
-    %li
-      = link_to "Dashboard", cms_path
-    
-    %li
-      = link_to "Pages", cms_pages_path
-    
-    %li
-      %a{:href => "#"} Posts
-    
-    %li
-      %a{:href => "#"} Menus
-      -# %ul
-        %li
-          %a Sub-menu Item?
-    
-    - if adminIsSudo?
-      %li
-        = link_to "Admins", cms_admins_path
-      %li
-        %a{:href => "#"} Settings
-    
-    %li
-      =link_to "My Profile", edit_cms_admin_path(current_admin)
-    
-    %li
-      =link_to "Sign Out", destroy_admin_session_path, :method => :delete
-
+    =render "layouts/cms/menu_items"

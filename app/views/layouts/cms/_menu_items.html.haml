@@ -1,0 +1,40 @@
+%li
+  = link_to cms_path do
+    %span.glyphicon.glyphicon-th-large
+    Dashboard
+
+%li
+  = link_to cms_pages_path do
+    %span.glyphicon.glyphicon-file
+    Pages
+
+%li
+  %a{:href => "#"}
+    %span.glyphicon.glyphicon-pencil
+    Posts
+
+%li
+  %a{:href => "#"}
+    %span.glyphicon.glyphicon-menu-hamburger
+    Menus
+
+- if adminIsSudo?
+  %li
+    = link_to cms_admins_path do
+      %span.glyphicon.glyphicon-user
+      Admins
+  %li
+    %a{:href => "#"} 
+      %span.glyphicon.glyphicon-cog
+      Settings
+
+%li
+  =link_to edit_cms_admin_path(current_admin) do
+    %span.glyphicon.glyphicon-home
+    My Profile
+
+%li
+  =link_to destroy_admin_session_path, :method => :delete do
+    %span.glyphicon.glyphicon-flash
+    Sign Out 
+

@@ -5,21 +5,17 @@
 ###
 ExceptionHandler.setup do |config|
 
-	#DB - 
-	#Options = false / true
-	config.db = false
+  #DB - 
+  #Options = false / true
+  config.db = false
 
-	#Email -
-	#Default = false / true
-	#config.email = "p@pho.sx"
+  #Email -
+  #Default = false / true
+  #config.email = "p@pho.sx"
 
-	#Social
-	config.social = {
-		twitter: "http://twitter.com/patnz",
-		facebook:"#",
-		linkedin:"#",
-		youtube: "#",
-		fusion:  "#"
-	}
+  #Social
+  config.social = {
+    twitter: "http://twitter.com/patnz"
+  }
 
 end

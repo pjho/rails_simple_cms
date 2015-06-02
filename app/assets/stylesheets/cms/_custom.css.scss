@@ -1,7 +1,6 @@
 body { padding-top: 50px; }
 
 // Hack so I don't have to load font-awesome. 
-// Wouldn't do this in production.
 .fa{ @extend .glyphicon; }
 .fa-bold { @extend .glyphicon-bold; }
 .fa-italic { @extend .glyphicon-italic; }

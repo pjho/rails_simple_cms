@@ -18,26 +18,19 @@ $(function() {
     
   };
 
-function showErrorAlert (reason, detail) {
-  var msg='';
-  if (reason==='unsupported-file-type') {
-    msg = "Unsupported format " + detail;
-  } else {
-    console.log("error uploading file", reason, detail);
-  }
+  initToolbarBootstrapBindings();  
 
-  $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
-    '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
-};
+  var scmsEditor = $("#scmsEditor");
+  var editorRaw = scmsEditor.parents('.tab-content').find('textarea.editor-raw');
 
-initToolbarBootstrapBindings();  
+  scmsEditor.wysiwyg({ fileUploadError: showErrorAlert});
 
-$('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
+  scmsEditor.wysiwyg().on('change', function() {
+    editorRaw.val($(this).cleanHtml());
+  });
 
-
-$('#editor').wysiwyg().on('change', function() {
-  $('#page_content').val($(this).cleanHtml());
-});
-
+  editorRaw.on('change', function() {
+    scmsEditor.wysiwyg().val($(this).cleanHtml());
+  });
 
 });

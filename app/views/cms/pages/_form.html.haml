@@ -16,7 +16,7 @@
 
   .form-group
     = f.label :content
-    =render 'wysiwyg'
+    =render 'cms/shared/wysiwyg'
     #editor.lead
       = @page.content.html_safe
     = f.hidden_field :content

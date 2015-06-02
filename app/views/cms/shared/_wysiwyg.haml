@@ -1,5 +1,5 @@
 #alerts
-.btn-toolbar{"data-role" => "editor-toolbar", "data-target" => "#editor"}
+.btn-toolbar{"data-role" => "editor-toolbar", "data-target" => "#scmsEditor"}
 
   .btn-group
     %a.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", :title => "Format"}
@@ -65,15 +65,11 @@
       %i.glyphicon.glyphicon-link{ "style" => "color:#c5c5c5; "}
         
   .btn-group
-    %a#pictureBtn.btn.btn-default{:title => "Insert picture (or just drag  drop)"}
-      %i.glyphicon.glyphicon-picture
-      %input{"data-edit" => "insertImage", "data-role" => "magic-overlay", "data-target" => "#pictureBtn", :type => "file"}/
-
-  .btn-group
     %a.btn.btn-default{"data-edit" => "undo", :title => "Undo (Ctrl/Cmd+Z)"}
       %i.glyphicon.glyphicon-menu-left
     %a.btn.btn-default{"data-edit" => "redo", :title => "Redo (Ctrl/Cmd+Y)"}
       %i.glyphicon.glyphicon-repeat
-    %a.btn.btn-default{"data-edit" => "html", "title" => "Clear Formatting"}
-      %i.glyphicon.glyphicon-pencil
+    %a.btn.btn-default{"data-edit" => "html", :title => "Edit HTML"}
+      %small
+        HTML
 

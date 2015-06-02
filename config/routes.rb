@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   devise_for :admins
 
-  resources :pages, :only => [:show,:home], :path => '' 
-  resources :posts, :only => [:show]
+  resources :posts, :only => [:show,:index]
 
   get '/cms' => 'cms#index'
 
@@ -14,6 +13,8 @@ Rails.application.routes.draw do
   end
 
 
+  resources :pages, :only => [:show,:home], :path => '' 
+  
   #
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

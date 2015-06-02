@@ -16,10 +16,38 @@
 
   .form-group
     = f.label :content
-    =render 'cms/pages/wysiwyg'
-    #editor.lead
-      = @post.content.html_safe rescue ""
-    = f.hidden_field :content
+
+
+  .editor-wrapper{:role => "tabpanel"}
+    
+    %ul.nav.nav-tabs{:role => "tablist"}
+      %li.active{:role => "presentation"}
+        %a{"aria-controls" => "Editor", "data-toggle" => "tab", :href => "#editor-tab", :role => "tab"} Editor
+      %li{:role => "presentation"}
+        %a{"aria-controls" => "HTML", "data-toggle" => "tab", :href => "#html-tab", :role => "tab"} HTML
+
+    .tab-content
+      #editor-tab.tab-pane.active{:role => "tabpanel"}
+        =render 'cms/shared/wysiwyg'
+        #scmsEditor.lead
+          = @post.content.html_safe rescue ""
+
+      #html-tab.tab-pane{:role => "tabpanel"}
+        = f.text_area :content, size: "160x16", class:"editor-raw form-control"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .form-group
     = f.label "Publish Status"

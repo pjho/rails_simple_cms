@@ -1,0 +1,27 @@
+-# %article
+-#   %h1 
+-#     =@post.title
+-#   =@post.content.html_safe
+
+
+-# - if admin_signed_in?
+-#   %ul.actions
+-#     %li
+-#       = link_to 'Edit post', edit_cms_post_path(@post), class: "button small"
+-#     %li
+-#       = link_to 'All posts', cms_posts_path, class: "button small"
+
+
+%h1
+  All posts | #{link_to 'Add New Post', new_cms_post_path, {class: 'btn btn-primary'}}
+%table.table.table-striped.table-hover
+  %thead
+    %tr
+      %th Title
+      %th Date Created
+  %tbody
+    - @posts.each do |post|
+      %tr
+        %td
+          = link_to post.title, post
+        %td= post.created_at.strftime("%d %b %Y")

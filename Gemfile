@@ -18,6 +18,7 @@ gem 'redcarpet', '~> 3.2.3'
 gem "rails-settings-cached", "0.4.1"
 
 gem 'will_paginate', '~> 3.0.7'
+gem 'will_paginate-bootstrap'
 
 gem 'devise', '~> 3.4.1'
 

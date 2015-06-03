@@ -1,10 +1,8 @@
 class Cms::PostsController < CmsController
   before_action :set_post, only: [:edit, :update, :destroy]
-#  before_action :authenticate_admin!
-  # layout "cms"
   
   def index
-    @posts = Post.all
+    @posts = Post.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 10)
   end
 
   def new

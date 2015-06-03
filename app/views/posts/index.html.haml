@@ -11,3 +11,6 @@
             code
           %a{ "href" => "/tag/ruby", "class" => "post-tag post-ruby"}
             ruby
+
+  .text-right
+    = will_paginate @posts, renderer: BootstrapPagination::Rails

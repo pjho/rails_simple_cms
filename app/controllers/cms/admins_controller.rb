@@ -2,7 +2,7 @@ class Cms::AdminsController < CmsController
   before_action "authenticateSuper!", except: ['edit','update']
 
   def index
-    @admins = Admin.where.not(id: current_admin.id)
+    @admins = Admin.where.not(id: current_admin.id).order('name').paginate(:page => params[:page], :per_page => 10)
   end
 
   def new

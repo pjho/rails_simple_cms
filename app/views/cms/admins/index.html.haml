@@ -32,3 +32,6 @@
         %td
           %span.glyphicon.glyphicon-trash
           = link_to 'Delete Admin', "#{cms_admins_path}/#{admin.id}", method: :delete, data: { confirm: 'Are you sure?' }
+
+.text-right
+  = will_paginate @admins, renderer: BootstrapPagination::Rails

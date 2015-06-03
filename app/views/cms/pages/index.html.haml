@@ -29,3 +29,6 @@
         %td
           %span.glyphicon.glyphicon-trash
           = link_to 'Delete Page', "#{cms_pages_path}/#{page.id}", method: :delete, data: { confirm: 'Are you sure?' }
+
+.text-right
+  = will_paginate @pages, renderer: BootstrapPagination::Rails

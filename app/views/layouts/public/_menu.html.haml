@@ -1,7 +1,5 @@
 %ul.menu
-  %li
-    %a.page-link{:href => "/about/"} About Me
-  %li
-    %a.page-link{:href => "/self-guided-study/"} Study
-  %li
-    %a.page-link{:href => "/activity/"} Activity
+  - Settings['menus.sidebar'].each do |item|
+    %li
+      %a.page-link{:href => item['url'] }
+        =item['text']

@@ -14,7 +14,7 @@
     Posts
 
 %li
-  %a{:href => "#"}
+  = link_to cms_menus_path do 
     %span.glyphicon.glyphicon-menu-hamburger
     Menus
 
@@ -24,7 +24,7 @@
       %span.glyphicon.glyphicon-user
       Admins
   %li
-    %a{:href => "#"} 
+    = link_to cms_settings_path do 
       %span.glyphicon.glyphicon-cog
       Settings
 
@@ -34,7 +34,7 @@
     My Profile
 
 %li
-  =link_to destroy_admin_session_path, :method => :delete do
+  =link_to destroy_admin_session_path, :method => :delete, :data => { :confirm => 'Are you sure you want to sign out?' } do
     %span.glyphicon.glyphicon-flash
     Sign Out 
 

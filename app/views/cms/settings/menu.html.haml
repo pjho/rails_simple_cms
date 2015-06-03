@@ -1,0 +1,41 @@
+%h1 
+  Manage Menus.
+%br  
+%br
+
+= form_tag("/cms/settings", :method => "put") do
+
+  %div{:role => "tabpanel"}
+    %ul.nav.nav-tabs{:role => "tablist"}
+      %li.active{:role => "presentation"}
+        %a{"aria-controls" => "site-settings", "data-toggle" => "tab", :href => "#sidebar-menu", :role => "tab"} Sidebar Menu
+      %li{:role => "presentation"}
+        %a{"aria-controls" => "social-settings", "data-toggle" => "tab", :href => "#footer-menu", :role => "tab"} Footer Menu
+
+    .tab-content
+      - ['sidebar','footer'].each do |menu|
+        - classes = (menu == 'sidebar' ? "tab-pane active" : "tab-pane")
+        %div{:role => "tabpanel", :id => "#{menu}-menu", :class => classes }
+          %table.table.table-striped.table-bordered.menu-table
+            %thead
+              %tr
+                %th Link Text
+                %th Link URL
+                %th{'width' => '35'}
+            %tbody
+              -eval("@#{menu}").each do |row|
+                %tr
+                  %td
+                    = text_field_tag "settings[menus.#{menu}][][text]", row["text"], class: "form-control"
+                  %td
+                    = text_field_tag "settings[menus.#{menu}][][url]", row["url"], class: "form-control"
+                  %td
+                    %a.del-row
+                      %span.glyphicon.glyphicon-remove-circle
+
+          %p.text-right
+            %a.btn.btn-primary.add-row
+              Add Menu Item
+
+    = submit_tag "Save Changes", class: "btn btn-primary"
+

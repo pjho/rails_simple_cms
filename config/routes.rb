@@ -7,9 +7,14 @@ Rails.application.routes.draw do
   get '/cms' => 'cms#index'
 
   namespace :cms do
-    resources :pages, :except => [:show,:home]
+    resources :pages, :except => [:show]
     resources :posts, :except => [:show]
     resources :admins, :controller => "admins"
+    
+    get '/settings' => 'settings#index'
+    put '/settings' => 'settings#update'
+    get '/menus' => 'settings#menu'
+    # put '/menus' => 'settings#menu_update'
   end
 
 

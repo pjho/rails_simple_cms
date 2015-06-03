@@ -2,13 +2,5 @@
   %a.image.avatar{:href => "/"}
     = image_tag "public/avatar.jpg", alt: "Avatar"
   %h1
-    %strong> I am Strata
-    , a super simple
-    %br/
-    responsive site template freebie
-    %br/
-    crafted by
-    = succeed "." do
-      %a{:href => "http://html5up.net"} HTML5 UP
-
+    = markdown(Settings['site.site_description'].gsub('\\',"\n"))
   =render "layouts/public/menu"

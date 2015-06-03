@@ -1,0 +1,37 @@
+%h1 
+  Manage Settings.
+%br  
+%br
+= form_tag("/cms/settings", :method => "put") do
+
+  %div{:role => "tabpanel"}
+    %ul.nav.nav-tabs{:role => "tablist"}
+      %li.active{:role => "presentation"}
+        %a{"aria-controls" => "site-settings", "data-toggle" => "tab", :href => "#site-settings", :role => "tab"} Site Settings
+      %li{:role => "presentation"}
+        %a{"aria-controls" => "social-settings", "data-toggle" => "tab", :href => "#social-settings", :role => "tab"} Social Settings
+
+    .tab-content
+      #site-settings.tab-pane.active{:role => "tabpanel"}
+        %table.table.table-striped.table-bordered
+          - @settings.each_pair do |name,value|
+            %tr
+              %td
+                = label_tag name, setting_name(name)
+              %td
+                = text_field_tag "settings[#{name}]", value, class: "form-control"
+    
+      #social-settings.tab-pane{:role => "tabpanel"}
+        %table.table.table-striped.table-bordered
+          - @social.each_pair do |name,value|
+            %tr
+              %td
+                = label_tag name, name.split('.')[1].gsub('_',' ').titlecase
+              %td
+                = text_field_tag "settings[#{name}]", value, class: "form-control"
+
+  = submit_tag "Save Changes", class: "btn btn-primary"
+
+
+
+

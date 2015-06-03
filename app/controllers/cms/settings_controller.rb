@@ -1,9 +1,9 @@
 class Cms::SettingsController < CmsController
 
   def index
-    # @settings = Settings.thing_scoped.all
-    @settings = Settings.get_all('site.')
-    @social = Settings.get_all('social.')
+    # A bit of a hack here since get_all only returns what's in the database not default settings
+    @settings = ( set = Settings.get_all!('site.') ) ? set : load_site_defaults
+    @social = ( soc = Settings.get_all!('social.') ) ? soc : load_social_defaults
   end
 
   def update
@@ -22,20 +22,22 @@ class Cms::SettingsController < CmsController
 private
   
   def allowed_keys
-    [ 
-      'site.default_page_title',
-      'site.site_description',
-      'site.copyright_text',
-      'social.twitter',
-      'social.github',
-      'social.dribble',
-      'social.linkedin',
-      'social.facebook',
-      'social.stackexchange',
-      'social.email',
-      'menus.sidebar',
-      'menus.footer'
-    ]
+    ['site.default_page_title', 'site.site_description', 'site.copyright_text', 'social.twitter',
+      'social.github', 'social.dribbble', 'social.linkedin', 'social.facebook', 'social.stackexchange',
+      'social.email', 'menus.sidebar', 'menus.footer']
+  end
+  
+  def load_site_defaults
+    { 'site.default_page_title' => Settings['site.default_page_title'],
+      'site.site_description' => Settings["site.site_description"],
+      'site.copyright_text' => Settings["site.copyright_text"] }
+  end
+
+  def load_social_defaults
+   { 'social.twitter' => Settings['social.twitter'], 'social.github' => Settings["social.github"],
+     'social.dribbble' => Settings['social.dribbble'], 'social.linkedin' => Settings["social.linkedin"],
+     'social.facebook' => Settings['social.facebook'], 'social.stack_exchange' => Settings["social.stack_exchange"],
+     'social.email' => Settings['social.email'] }
   end
 
 end

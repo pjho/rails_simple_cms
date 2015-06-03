@@ -1,23 +1,19 @@
 (function($) {
   $(document).ready( function(){   
 
+    // Adds new row to menus interface
+    $('a.add-row').on('click', function(){
+      var table    = $(this).parent().prev(),
+          template = table.find('tr').last(),
+          newrow   = template.clone();
 
-  $('a.add-row').on('click', function(){
-    var table    = $(this).parent().prev(),
-        template = table.find('tr').last(),
-        newrow   = template.clone();
+      $(newrow).find('input').val('');
+      $(newrow).insertAfter(template);
+    });
 
-    $(newrow).find('input').val('');
-    $(newrow).insertAfter(template);
-  });
-
-  $('table.menu-table').on('click', 'a.del-row', function(){
-    $(this).parents('tr').remove();
-  });
-
-
-
+    // Deletes row from menus interface
+    $('table.menu-table').on('click', 'a.del-row', function(){
+      $(this).parents('tr').remove();
+    });
   });
 })(jQuery);
-
-

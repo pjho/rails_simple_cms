@@ -3,4 +3,5 @@
   .btn-group
     = link_to 'View Post', @post, class: "btn btn-default", target: "_blank"
     = link_to 'Back to Posts', cms_posts_path, class: "btn btn-default"
+    = link_to 'Add New Post', new_cms_post_path, class: "btn btn-primary"
 = render 'form'

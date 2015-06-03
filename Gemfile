@@ -5,15 +5,19 @@ gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'haml', '~> 4.0.6'
-gem 'pagedown-bootstrap-rails'
-gem 'redcarpet', '~> 3.2.3'
-gem "rails-settings-cached", "0.4.1"
 
 gem 'bootstrap-sass'
 #gem 'coffee-rails', '~> 4.1.0'
-
 gem 'jquery-rails'
 gem 'turbolinks'
+
+
+gem 'pagedown-bootstrap-rails'
+gem 'redcarpet', '~> 3.2.3'
+
+gem "rails-settings-cached", "0.4.1"
+
+gem 'will_paginate', '~> 3.0.7'
 
 gem 'devise', '~> 3.4.1'
 

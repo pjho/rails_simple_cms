@@ -45,9 +45,13 @@ class ApplicationController < ActionController::Base
     if admin_signed_in?
       super
     else
-      redirect_to root_path, 
-        notice: %Q[ You need to sign in to perform that action. #{view_context.link_to "Sign In", new_admin_session_path}.],
-        flash: { html_safe: true }
+      if params[:controller] == "cms" && params[:action] == 'index'
+        redirect_to new_admin_session_path
+      else
+        redirect_to root_path, 
+          notice: %Q[ You need to sign in to perform that action. #{view_context.link_to "Sign In", new_admin_session_path}.],
+          flash: { html_safe: true }
+      end
     end
   end
 

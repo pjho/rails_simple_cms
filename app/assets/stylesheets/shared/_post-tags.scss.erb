@@ -1,0 +1,56 @@
+.post-tag{
+  display:inline-block;
+  margin:0px 2px;
+  padding:3px;
+  border-radius:3px;
+  line-height:0.9em;
+  font-size:0.8em;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  
+  border:1px solid <%= "red" %>;
+  color: #C4C4C4;
+  &:hover{
+    background-color: #C4C4C4;
+  }
+
+}
+
+a.post-tag:hover{color:#FFF!important}
+
+<% Tag.all.each do |tag| %>
+
+ .post-tag.post-<%= tag.name %>{
+  border-color:<%= tag.color %>;
+  color: <%= tag.color %>;
+    &:hover{
+      background-color:<%= tag.color %>;
+    }
+  }
+
+<% end %>
+
+.post-tag.post-ruby{
+  border-color:#AC1401;
+  color: #CC342D;
+  &:hover{
+    background-color:#AC1401;
+  }
+}
+
+.post-tag.post-code{
+  border-color:#015193;
+  color: #015193;
+  &:hover{
+    background-color:#015193;
+  }
+}
+
+.post-tag.post-js{
+  border-color:#F0DB4F;
+  color: #323330;
+  &:hover{
+    background-color:#F0DB4F;
+  }
+}

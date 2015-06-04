@@ -1,5 +1,5 @@
 (function($) {
-  $(document).ready( function(){   
+  $(document).on('page:change', function () {
 
     // Adds new row to menus interface
     $('a.add-row').on('click', function(){

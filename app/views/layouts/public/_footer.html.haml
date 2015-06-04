@@ -1,4 +1,3 @@
-/ Footer
 %footer#footer
   %ul.icons
     - Settings.get_all('social.').each_pair do |name,link|
@@ -11,6 +10,9 @@
   %ul.copyright
     %li 
       =Settings['site.copyright_text'].html_safe
+    -Settings['menus.footer'].each do |item|
+      %li
+        = link_to item['text'], item['url']
+
     %li
-      Design:
       %a{:href => "http://html5up.net"} HTML5 UP

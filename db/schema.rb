@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150602213931) do
+ActiveRecord::Schema.define(version: 20150604052405) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -66,5 +66,24 @@ ActiveRecord::Schema.define(version: 20150602213931) do
   end
 
   add_index "settings", ["thing_type", "thing_id", "var"], name: "index_settings_on_thing_type_and_thing_id_and_var", unique: true
+
+  create_table "taggings", force: :cascade do |t|
+    t.integer  "post_id"
+    t.integer  "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "taggings", ["post_id"], name: "index_taggings_on_post_id"
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name"
+    t.string   "color",      default: "#C4C4C4"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
+  add_index "tags", ["name"], name: "index_tags_on_name"
 
 end

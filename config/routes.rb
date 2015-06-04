@@ -17,7 +17,8 @@ Rails.application.routes.draw do
     # put '/menus' => 'settings#menu_update'
   end
 
-
+  get 'posts/tag/:tag', to: 'posts#index', as: "tag"
+  
   resources :pages, :only => [:show,:home], :path => '' 
   
   #

@@ -30,7 +30,11 @@
               %td
                 = text_field_tag "settings[#{name}]", value, class: "form-control"
 
-  = submit_tag "Save Changes", class: "btn btn-primary"
+  .form-group.col-md-6
+    %label Enter password to make changes
+    = password_field_tag :current_admin_pass, "", autocomplete: "off", class: "form-control"
+  .col-md-12
+    = submit_tag "Save Changes", class: "btn btn-primary"
 
 
 

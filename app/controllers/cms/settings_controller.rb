@@ -7,11 +7,18 @@ class Cms::SettingsController < CmsController
   end
 
   def update
-    allowed = allowed_keys
-    params['settings'].each_pair do |setting, value|
-      eval("Settings['#{setting}'] = value") if allowed.include? setting
+    # Check current admin has entered their correct password 
+
+    if reAuthCurrentAdmin(params['current_admin_pass'])
+      allowed = allowed_keys
+      params['settings'].each_pair do |setting, value|
+        eval("Settings['#{setting}'] = value") if allowed.include? setting
+      end
+      redirect_to :back, :notice => 'Updated Successfully'       
+    else
+      flash[:alert] = "You need to enter your current password to make changes."
+      redirect_to :back
     end
-    redirect_to :back, :notice => 'Updated Successfully' 
   end
 
   def menu

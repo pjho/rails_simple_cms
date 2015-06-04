@@ -1,4 +1,5 @@
 class Cms::SettingsController < CmsController
+  before_action 'authenticateSuper!'
 
   def index
     # A bit of a hack here since get_all only returns what's in the database not default settings

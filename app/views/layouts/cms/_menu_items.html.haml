@@ -13,12 +13,12 @@
     %span.glyphicon.glyphicon-pencil
     Posts
 
-%li
-  = link_to cms_menus_path do 
-    %span.glyphicon.glyphicon-menu-hamburger
-    Menus
 
 - if current_admin.sudo
+  %li
+    = link_to cms_menus_path do 
+      %span.glyphicon.glyphicon-menu-hamburger
+      Menus
   %li
     = link_to cms_admins_path do
       %span.glyphicon.glyphicon-user

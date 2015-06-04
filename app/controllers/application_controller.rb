@@ -24,6 +24,13 @@ class ApplicationController < ActionController::Base
     cms_path
   end
 
+
+  def reAuthCurrentAdmin(pass)
+    Admin.find(current_admin.id).valid_password?(pass)
+  end
+
+
+
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception

@@ -34,6 +34,10 @@
         =f.radio_button :published, false
         unpublished
 
+  .form-group
+    = f.label :all_tags
+    = f.text_field :all_tags, placeholder: "Tags separated with comma", class: "form-control"
+
   .actions.form-group
     = f.submit 'Save', class: "btn btn-primary"
 

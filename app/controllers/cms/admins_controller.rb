@@ -11,10 +11,15 @@ class Cms::AdminsController < CmsController
 
   def create
     @admin = Admin.new(admin_params)
-    if @admin.save
+
+    # Check current admin has entered their correct password 
+    reAuth = reAuthCurrentAdmin(params['admin']['current_admin_pass'])
+
+    if reAuth && @admin.save
       flash[:notice] = "Successfully created Admin." 
       redirect_to cms_admins_path
     else
+      flash[:alert] = "You need to enter your current password to make changes." unless reAuth
       render :action => 'new'
     end
   end
@@ -26,17 +31,25 @@ class Cms::AdminsController < CmsController
 
   def update
     @admin = Admin.find(params[:id])
+    # Only allow sudo admins to edit other admins.
     authenticateSuper! unless current_admin.id == @admin.id 
 
+    # Check current admin has entered their correct password 
+    reAuth = reAuthCurrentAdmin(params['admin']['current_admin_pass'])
+    
+    # Filter password parameters of not set
     params[:admin].delete(:password) if params[:admin][:password].blank?
     params[:admin].delete(:password_confirmation) if params[:admin][:password].blank? and params[:admin][:password_confirmation].blank?
-    if @admin.update_attributes(admin_params)
+    
+    if reAuth && @admin.update_attributes(admin_params)
       flash[:notice] = "Successfully updated Admin."
       redirect_to edit_cms_admin_path
     else
+      flash[:alert] = "You need to enter your current password to make changes." unless reAuth
       render :action => 'edit'
     end
   end
+
 
   def destroy
     @admin = Admin.find(params[:id])
@@ -49,7 +62,7 @@ class Cms::AdminsController < CmsController
 private
 
   def admin_params
-    params.require(:admin).permit(:name, :email, :password, :encrypted_password, ( :sudo if current_admin.sudo) )
+    params.require(:admin).permit(:name, :email, :password, :password_confirmation, ( :sudo if current_admin.sudo) )
   end
 
 end

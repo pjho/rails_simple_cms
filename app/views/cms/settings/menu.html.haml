@@ -36,6 +36,8 @@
           %p.text-right
             %a.btn.btn-default.add-row
               Add Menu Item
-
-    = submit_tag "Save Changes", class: "btn btn-primary"
-
+    .form-group.col-md-6
+      %label Enter password to make changes
+      = password_field_tag :current_admin_pass, "", autocomplete: "off", class: "form-control"
+    .col-md-12
+      = submit_tag "Save Changes", class: "btn btn-primary"

@@ -1,6 +1,8 @@
 body { padding-top: 50px; }
+h1{ margin-bottom: 40px; }
+.clear{ clear:both; }
 
-// Hack so I don't have to load font-awesome. 
+// Hack so I don't have to load font-awesome for markdown editor. 
 .fa{ @extend .glyphicon; }
 .fa-bold { @extend .glyphicon-bold; }
 .fa-italic { @extend .glyphicon-italic; }
@@ -66,4 +68,14 @@ body { padding-top: 50px; }
   }
 }
 
-h1{ margin-bottom: 40px; }
+.tag-edit-form{ padding: 12px 10px; background-color: #F5F5F5; border-top:1px solid #dddddd; }
+.tag-edit-form:nth-child(4n+4), 
+.tag-edit-form:nth-child(4n-1){ background-color:#FFFFFF; }
+.color-preview{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: -30px;
+  vertical-align: middle;
+}

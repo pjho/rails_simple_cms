@@ -6,4 +6,5 @@
 //= require pagedown_bootstrap
 //= require cms/pagedown_init
 
+//= require cms/tags
 //= require cms/custom

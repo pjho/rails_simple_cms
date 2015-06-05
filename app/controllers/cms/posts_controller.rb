@@ -15,19 +15,19 @@ class Cms::PostsController < CmsController
   def create
     @post = Post.new(post_params)
 
-      if @post.save
-        redirect_to edit_cms_post_path(@post), notice: 'Post was successfully created.'
-      else
-        render :new
-      end
+    if @post.save
+      redirect_to edit_cms_post_path(@post), notice: 'Post was successfully created.'
+    else
+      render :new
+    end
   end
 
   def update
-      if @post.update(post_params)
-        redirect_to edit_cms_post_path(@post), notice: 'Post was successfully updated.'
-      else
-        render :edit
-      end
+    if @post.update(post_params)
+      redirect_to edit_cms_post_path(@post), notice: 'Post was successfully updated.'
+    else
+      render :edit
+    end
   end
 
   def destroy

@@ -1,0 +1,18 @@
+%h1 Manage Tags
+
+-@tags.each do |tag|
+  .col-md-6.tag-edit-form
+    = form_for tag, url: cms_tag_path(tag),remote: true, method: :patch, :html => { class: "form form-inline update-tag" } do |f|
+      .form-group
+        %label{:for => "name"} Name
+        =f.text_field :name, class: "form-control"
+      .form-group
+        %label{:for => "color"} Color
+        =f.text_field :color, class: "form-control"
+        %span.color-preview{:style => "background-color:#{tag.color};"}
+      .form-group
+        =f.submit "save", class: "btn btn-primary btn-sm save-tag" 
+        = link_to "delete", cms_tag_path(tag), remote: true, method: :delete, class: "delete-tag btn btn-danger btn-sm"
+
+.row.text-center.clear
+  = will_paginate @posts, renderer: BootstrapPagination::Rails

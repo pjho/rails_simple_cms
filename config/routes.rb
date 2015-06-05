@@ -10,11 +10,10 @@ Rails.application.routes.draw do
     resources :pages, :except => [:show]
     resources :posts, :except => [:show]
     resources :admins, :controller => "admins"
-    
+    resources :tags, :only => ['index','update','destroy']
     get '/settings' => 'settings#index'
     put '/settings' => 'settings#update'
     get '/menus' => 'settings#menu'
-    # put '/menus' => 'settings#menu_update'
   end
 
   get 'posts/tag/:tag', to: 'posts#index', as: "tag"

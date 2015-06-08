@@ -68,14 +68,32 @@ h1{ margin-bottom: 40px; }
   }
 }
 
-.tag-edit-form{ padding: 12px 10px; background-color: #F5F5F5; border-top:1px solid #dddddd; }
-.tag-edit-form:nth-child(4n+4), 
-.tag-edit-form:nth-child(4n-1){ background-color:#FFFFFF; }
-.color-preview{
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
-  margin-left: -30px;
-  vertical-align: middle;
+.tag-edit-form{ padding: 12px 10px 2px; background-color: #F5F5F5; border-top:1px solid #dddddd; }
+
+
+.color-preview{display: inline-block; width: 20px; height: 20px; border-radius: 20px; float: right; margin: -27px 6px 0 0;}
+
+.tag-btns{ text-align:center; }
+.tags-recompile {margin:5px 0 0 15px; float:right}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  .tag-edit-form:nth-child(2n-1){ background-color:#FFFFFF; }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .tag-btns{ text-align:center; }
+  .tag-edit-form .form-group{margin-bottom: 10px!important;}
+  .color-preview{float:none; margin:0 0 0 -30px; vertical-align: middle; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .tag-edit-form:nth-child(4n+4), 
+  .tag-edit-form:nth-child(4n-1){ background-color:#FFFFFF; }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
 }

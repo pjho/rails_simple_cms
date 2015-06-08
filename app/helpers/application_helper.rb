@@ -4,7 +4,7 @@ module ApplicationHelper
   # Renders MarkDown as HTML
   def markdown(text)
     options = {
-      filter_html:     true,
+      filter_html:     false,
       hard_wrap:       true, 
       link_attributes: { rel: 'nofollow', target: "_blank" },
       space_after_headers: true, 

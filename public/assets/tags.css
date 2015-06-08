@@ -10,8 +10,8 @@
 .post-tag.post-demise:hover{ background-color:#72249C; } 
 .post-tag.post-entropy { border-color: #CD919E; color: #CD919E; } 
 .post-tag.post-entropy:hover{ background-color:#CD919E; } 
-.post-tag.post-figurative { border-color: #D0BEEF; color: #D0BEEF; } 
-.post-tag.post-figurative:hover{ background-color:#D0BEEF; } 
+.post-tag.post-figurative { border-color: #D0BEEA; color: #D0BEEA; } 
+.post-tag.post-figurative:hover{ background-color:#D0BEEA; } 
 .post-tag.post-gravity { border-color: #696969; color: #696969; } 
 .post-tag.post-gravity:hover{ background-color:#696969; } 
 .post-tag.post-hereditory { border-color: #EADBEF; color: #EADBEF; } 
@@ -46,11 +46,19 @@
 .post-tag.post-yak:hover{ background-color:#BEDDED; } 
 .post-tag.post-zorb { border-color: #D00D1E; color: #D00D1E; } 
 .post-tag.post-zorb:hover{ background-color:#D00D1E; } 
-.post-tag.post-some shit { border-color: #C4C4C4; color: #C4C4C4; } 
-.post-tag.post-some shit:hover{ background-color:#C4C4C4; } 
-.post-tag.post-something else { border-color: #C4C4C4; color: #C4C4C4; } 
-.post-tag.post-something else:hover{ background-color:#C4C4C4; } 
-.post-tag.post-somethinf { border-color: #AB1F00; color: #AB1F00; } 
-.post-tag.post-somethinf:hover{ background-color:#AB1F00; } 
-.post-tag.post-shit { border-color: #FD4634; color: #FD4634; } 
-.post-tag.post-shit:hover{ background-color:#FD4634; } 
+.post-tag.post-jamaica { border-color: #485059; color: #485059; } 
+.post-tag.post-jamaica:hover{ background-color:#485059; } 
+.post-tag.post-equality { border-color: #57E2D3; color: #57E2D3; } 
+.post-tag.post-equality:hover{ background-color:#57E2D3; } 
+.post-tag.post-a { border-color: #81A1E2; color: #81A1E2; } 
+.post-tag.post-a:hover{ background-color:#81A1E2; } 
+.post-tag.post-new { border-color: #790D1E; color: #790D1E; } 
+.post-tag.post-new:hover{ background-color:#790D1E; } 
+.post-tag.post-multiple { border-color: #F4726E; color: #F4726E; } 
+.post-tag.post-multiple:hover{ background-color:#F4726E; } 
+.post-tag.post-at { border-color: #071CA5; color: #071CA5; } 
+.post-tag.post-at:hover{ background-color:#071CA5; } 
+.post-tag.post-once { border-color: #B53154; color: #B53154; } 
+.post-tag.post-once:hover{ background-color:#B53154; } 
+.post-tag.post-thing { border-color: #3F1FF4; color: #3F1FF4; } 
+.post-tag.post-thing:hover{ background-color:#3F1FF4; } 

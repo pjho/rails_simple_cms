@@ -19,10 +19,9 @@ private
     self.color = self.color.upcase
   end
 
-  
   def self.random_color
-    o = "#"
-    6.times { o << "ABCDEF0123456789".chars.sample }
-    o
+    color = "#"
+    6.times { color << "ABCDEF0123456789".chars.sample }
+    color
   end
 end

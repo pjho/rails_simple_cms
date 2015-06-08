@@ -41,6 +41,6 @@ class Cms::PostsController < CmsController
     end
 
     def post_params
-      params.require(:post).permit(:title, :slug, :content, :published,:all_tags)
+      params.require(:post).permit(:title, :slug, :content, :published, :add_tags)
     end
 end

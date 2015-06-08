@@ -16,7 +16,7 @@
       .form-group.tag-btns
         =f.submit "save", class: "btn btn-primary btn-sm save-tag" 
         = link_to "delete", cms_tag_path(tag), remote: true, method: :delete, class: "delete-tag btn btn-danger btn-sm"
-        = link_to pluralize(tag.posts.count, 'post'), tag_path(tag.name), class:"btn-default btn btn-sm", target: "_blank" 
+        = link_to pluralize(tag.posts.count, 'post'), tag_path(tag.id,tag.name.parameterize), class:"btn-default btn btn-sm", target: "_blank" 
 
 .row.text-center.clear
   = will_paginate @posts, renderer: BootstrapPagination::Rails

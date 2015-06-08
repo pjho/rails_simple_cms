@@ -8,7 +8,7 @@
             = post.created_at.strftime("%d.%m.%y")
           = link_to post.title, post, class: "post-link"
           - post.tags.each do |tag|
-            = link_to tag.name, tag_path(tag.name), class: "post-tag post-#{tag.name}" 
+            = link_to tag.name, tag_path(tag.id, tag.name.parameterize), class: "post-tag post-#{tag.name.parameterize}" 
 
   .text-right
     = will_paginate @posts, renderer: BootstrapPagination::Rails

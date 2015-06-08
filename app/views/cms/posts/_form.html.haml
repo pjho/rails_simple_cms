@@ -26,7 +26,7 @@
   .form-group
     = f.label :all_tags, "Tags"
     - @post.tags.each do |tag|
-      %span{ :class => "post-tag post-#{tag.name}" }
+      %span{ :class => "post-tag post-#{tag.name.parameterize}" }
         = tag.name
       = link_to "(x)", "/cms/tagging/#{@post.id}/#{tag.id}", remote: true, method: :delete, class: "tag-remove"
 

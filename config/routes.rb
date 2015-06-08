@@ -10,19 +10,17 @@ Rails.application.routes.draw do
     delete "/tagging/:post_id/:tag_id" => "taggings#destroy", as: 'delete_tagging_path'
     resources :pages, :except => [:show]
     resources :posts, :except => [:show]
-    resources :admins, :controller => "admins"
-    
-
+    resources :admins, :except => [:show], :controller => "admins"
     put '/tags/css' => 'tags#css'
-    resources :tags, :only => ['index','update','destroy']
+    resources :tags, :only => ['index','update','destroy','show']
     get '/settings' => 'settings#index'
     put '/settings' => 'settings#update'
     get '/menus' => 'settings#menu'
   end
 
-  get 'posts/tag/:tag', to: 'posts#index', as: "tag"
+  get 'posts/tag/:tag/:name', to: 'posts#index', as: "tag"
   
-  resources :pages, :only => [:show,:home], :path => '' 
+  resources :pages, :only => [:show,:home], :path => ''
   
   #
   # The priority is based upon order of creation: first created -> highest priority.

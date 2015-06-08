@@ -1,5 +1,5 @@
 class Post < ActiveRecord::Base
-  has_many :taggings
+  has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
 
   custom_slugs_with(:slug)
@@ -24,8 +24,8 @@ class Post < ActiveRecord::Base
     # nothing
   end
 
-  def self.tagged_with(name)
-    Tag.find_by_name!(name).posts
+  def self.tagged_with(id)
+    Tag.find_by_id!(id).posts
   end
 
   private

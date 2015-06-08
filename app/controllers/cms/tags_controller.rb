@@ -8,7 +8,7 @@ class Cms::TagsController < CmsController
   def update
     respond_to do |format|
       if @tag.update(tag_params)
-        format.json { render :show, status: :ok, location: @tag }
+        format.json { render :show, status: :ok }
       else
         format.json { render json: @tag.errors, status: :unprocessable_entity }
       end

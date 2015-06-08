@@ -9,6 +9,6 @@
           = link_to post.title, post, class: "post-link"
           - post.tags.each do |tag|
             = link_to tag.name, tag_path(tag.name), class: "post-tag post-#{tag.name}" 
-            
+
   .text-right
     = will_paginate @posts, renderer: BootstrapPagination::Rails

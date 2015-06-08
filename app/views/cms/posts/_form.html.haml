@@ -22,7 +22,19 @@
         = f.text_area :content, size: "20x20", class: "wmd-input form-control", id: "wmd-input-content"
       .col-md-6
         #wmd-preview-content.wmd-preview
-    
+
+  .form-group
+    = f.label :all_tags, "Tags"
+    - @post.tags.each do |tag|
+      %span{ :class => "post-tag post-#{tag.name}" }
+        = tag.name
+      = link_to "(x)", "/cms/tagging/#{@post.id}/#{tag.id}", remote: true, method: :delete, class: "tag-remove"
+
+
+  .form-group
+    = f.label :add_tags, "Add Tags"
+    = f.text_field :add_tags, placeholder: "Tags separated with comma", class: "form-control"
+
   .form-group
     = f.label "Publish Status"
     .radio
@@ -33,10 +45,6 @@
       %label
         =f.radio_button :published, false
         unpublished
-
-  .form-group
-    = f.label :all_tags
-    = f.text_field :all_tags, placeholder: "Tags separated with comma", class: "form-control"
 
   .actions.form-group
     = f.submit 'Save', class: "btn btn-primary"

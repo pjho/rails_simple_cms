@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :pages, :except => [:show]
     resources :posts, :except => [:show]
     resources :admins, :controller => "admins"
+    put '/tags/css' => 'tags#css'
     resources :tags, :only => ['index','update','destroy']
     get '/settings' => 'settings#index'
     put '/settings' => 'settings#update'

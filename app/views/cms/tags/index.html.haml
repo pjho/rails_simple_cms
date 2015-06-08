@@ -1,4 +1,7 @@
-%h1 Manage Tags
+%h1 
+  Manage Tags
+  = link_to "Recompile Stylesheets", cms_tags_css_path, remote: true, method: :put, class: "btn btn-warning tags-recompile"
+    
 
 -@tags.each do |tag|
   .col-md-6.tag-edit-form
@@ -8,11 +11,12 @@
         =f.text_field :name, class: "form-control"
       .form-group
         %label{:for => "color"} Color
-        =f.text_field :color, class: "form-control"
+        =f.text_field :color, class: "form-control tag-color-input"
         %span.color-preview{:style => "background-color:#{tag.color};"}
-      .form-group
+      .form-group.tag-btns
         =f.submit "save", class: "btn btn-primary btn-sm save-tag" 
         = link_to "delete", cms_tag_path(tag), remote: true, method: :delete, class: "delete-tag btn btn-danger btn-sm"
+        = link_to pluralize(tag.posts.count, 'post'), tag_path(tag.name), class:"btn-default btn btn-sm", target: "_blank" 
 
 .row.text-center.clear
   = will_paginate @posts, renderer: BootstrapPagination::Rails

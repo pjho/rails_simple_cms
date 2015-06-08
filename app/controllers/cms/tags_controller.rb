@@ -7,7 +7,7 @@ class Cms::TagsController < CmsController
 
   def update
     respond_to do |format|
-      if @tag.update(tag_params) 
+      if @tag.update(tag_params)
         format.json { render :show, status: :ok, location: @tag }
       else
         format.json { render json: @tag.errors, status: :unprocessable_entity }
@@ -16,11 +16,24 @@ class Cms::TagsController < CmsController
   end
 
   def destroy
-    @tag.destroy 
+    @tag.destroy
     respond_to do |format|
       format.js
     end
   end
+
+
+  def css
+    respond_to do |format|
+      succ = Tag.generateTagCss
+      if succ
+        format.json { render json: nil, status: :ok }
+      else
+        format.json { render json: nil, status: :unprocessable_entity }
+      end
+    end
+  end
+
 
   private
     def set_tag

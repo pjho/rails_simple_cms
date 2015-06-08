@@ -15,5 +15,13 @@
     $('table.menu-table').on('click', 'a.del-row', function(){
       $(this).parents('tr').remove();
     });
+
+    // Dirty validation for forms that require admin password to save
+    $('#current_admin_pass').closest('form').on('submit', function(){
+        if( $(this).find('#current_admin_pass').val().length < 1 ){
+          alert ("You must enter your current password to make changes.");
+          return false;
+        };
+    });
   });
 })(jQuery);

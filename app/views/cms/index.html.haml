@@ -1,3 +1,11 @@
-%h1
-  = "Welcome #{current_admin.name}"
--# = current_admin.inspect
+.jumbotron
+  %h1
+    = "Hello #{current_admin.name}"
+  %h2 Welcome to SimpleCms
+  %p I built this app as a first project to get to know Ruby on Rails framework. It took me a couple of weeks to build, but I took my time to make sure I really understood what was happening. Rails is a really beautiful framework and has been really fun to learn.
+  %br
+  %h2 Please feel free to click around and make changes. 
+  %p Any edits you make will be scrubbed every 5 minutes so don't be shy. Please let me know of any issues you encounter while clicking around.
+  %h2.text-center{"font-size" => "30px"}
+    %span.glyphicon.glyphicon-thumbs-up{'style'=>"border-radius:30px; border:3px solid black; padding:10px;"}
+

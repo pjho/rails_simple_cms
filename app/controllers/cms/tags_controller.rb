@@ -25,8 +25,7 @@ class Cms::TagsController < CmsController
 
   def css
     respond_to do |format|
-      succ = Tag.generateTagCss
-      if succ
+      if Tag.generateTagCss
         format.json { render json: nil, status: :ok }
       else
         format.json { render json: nil, status: :unprocessable_entity }

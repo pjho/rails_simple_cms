@@ -14,13 +14,19 @@ class Post < ActiveRecord::Base
   # setter for all tags
   def all_tags=(names)
     self.tags = names.split(",").map do |name|
-        Tag.where(name: name.strip).first_or_create!
+        Tag.where(name: name.strip).first_or_create! do |tag|
+          tag.color = Tag.random_color
+        end
     end
   end
   
   # getter for all tags
   def all_tags
     self.tags.map(&:name).join(", ")
+  end
+
+  def add_tags
+
   end
 
   def self.tagged_with(name)
@@ -34,5 +40,6 @@ class Post < ActiveRecord::Base
     self.slug = self.title if self.slug.empty?
     self.slug = self.slug.downcase.parameterize
   end
+
 
 end

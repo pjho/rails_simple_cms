@@ -1,64 +1,44 @@
-.post-tag.post-reggae { border-color: #A35816; color: #A35816; } 
-.post-tag.post-reggae:hover{ background-color:#A35816; } 
-.post-tag.post-sizzla { border-color: #E79F8A; color: #E79F8A; } 
-.post-tag.post-sizzla:hover{ background-color:#E79F8A; } 
-.post-tag.post-apocalypse { border-color: #ABCDED; color: #ABCDED; } 
-.post-tag.post-apocalypse:hover{ background-color:#ABCDED; } 
-.post-tag.post-chinchilla { border-color: #000000; color: #000000; } 
-.post-tag.post-chinchilla:hover{ background-color:#000000; } 
-.post-tag.post-demise { border-color: #72249C; color: #72249C; } 
-.post-tag.post-demise:hover{ background-color:#72249C; } 
-.post-tag.post-entropy { border-color: #CD919E; color: #CD919E; } 
-.post-tag.post-entropy:hover{ background-color:#CD919E; } 
-.post-tag.post-figurative { border-color: #D0BEEA; color: #D0BEEA; } 
-.post-tag.post-figurative:hover{ background-color:#D0BEEA; } 
-.post-tag.post-gravity { border-color: #696969; color: #696969; } 
-.post-tag.post-gravity:hover{ background-color:#696969; } 
-.post-tag.post-hereditory { border-color: #EADBEF; color: #EADBEF; } 
-.post-tag.post-hereditory:hover{ background-color:#EADBEF; } 
-.post-tag.post-ignites { border-color: #E96898; color: #E96898; } 
-.post-tag.post-ignites:hover{ background-color:#E96898; } 
-.post-tag.post-jubilee { border-color: #44998A; color: #44998A; } 
-.post-tag.post-jubilee:hover{ background-color:#44998A; } 
-.post-tag.post-kryptonite { border-color: #DADD1E; color: #DADD1E; } 
-.post-tag.post-kryptonite:hover{ background-color:#DADD1E; } 
-.post-tag.post-latitude { border-color: #FEEDA1; color: #FEEDA1; } 
-.post-tag.post-latitude:hover{ background-color:#FEEDA1; } 
-.post-tag.post-meteor { border-color: #F00D1E; color: #F00D1E; } 
-.post-tag.post-meteor:hover{ background-color:#F00D1E; } 
-.post-tag.post-orange { border-color: #BEEFEE; color: #BEEFEE; } 
-.post-tag.post-orange:hover{ background-color:#BEEFEE; } 
-.post-tag.post-pepper { border-color: #B00B1E; color: #B00B1E; } 
-.post-tag.post-pepper:hover{ background-color:#B00B1E; } 
-.post-tag.post-quail { border-color: #BAFFAB; color: #BAFFAB; } 
-.post-tag.post-quail:hover{ background-color:#BAFFAB; } 
-.post-tag.post-resilient { border-color: #EFBA05; color: #EFBA05; } 
-.post-tag.post-resilient:hover{ background-color:#EFBA05; } 
-.post-tag.post-tyranny { border-color: #0ECA98; color: #0ECA98; } 
-.post-tag.post-tyranny:hover{ background-color:#0ECA98; } 
-.post-tag.post-verdant { border-color: #886988; color: #886988; } 
-.post-tag.post-verdant:hover{ background-color:#886988; } 
-.post-tag.post-willing { border-color: #313371; color: #313371; } 
-.post-tag.post-willing:hover{ background-color:#313371; } 
-.post-tag.post-xavier { border-color: #345ABC; color: #345ABC; } 
-.post-tag.post-xavier:hover{ background-color:#345ABC; } 
-.post-tag.post-yak { border-color: #BEDDED; color: #BEDDED; } 
-.post-tag.post-yak:hover{ background-color:#BEDDED; } 
-.post-tag.post-zorb { border-color: #D00D1E; color: #D00D1E; } 
-.post-tag.post-zorb:hover{ background-color:#D00D1E; } 
-.post-tag.post-jamaica { border-color: #485059; color: #485059; } 
-.post-tag.post-jamaica:hover{ background-color:#485059; } 
-.post-tag.post-equality { border-color: #57E2D3; color: #57E2D3; } 
-.post-tag.post-equality:hover{ background-color:#57E2D3; } 
-.post-tag.post-a { border-color: #81A1E2; color: #81A1E2; } 
-.post-tag.post-a:hover{ background-color:#81A1E2; } 
-.post-tag.post-new { border-color: #790D1E; color: #790D1E; } 
-.post-tag.post-new:hover{ background-color:#790D1E; } 
-.post-tag.post-multiple { border-color: #F4726E; color: #F4726E; } 
-.post-tag.post-multiple:hover{ background-color:#F4726E; } 
-.post-tag.post-at { border-color: #071CA5; color: #071CA5; } 
-.post-tag.post-at:hover{ background-color:#071CA5; } 
-.post-tag.post-once { border-color: #B53154; color: #B53154; } 
-.post-tag.post-once:hover{ background-color:#B53154; } 
-.post-tag.post-thing { border-color: #3F1FF4; color: #3F1FF4; } 
-.post-tag.post-thing:hover{ background-color:#3F1FF4; } 
+.post-tag.post-mgmt { border-color: #1CE1CE; color: #1CE1CE; } 
+.post-tag.post-mgmt:hover{ background-color:#1CE1CE; } 
+.post-tag.post-indy { border-color: #B54A6E; color: #B54A6E; } 
+.post-tag.post-indy:hover{ background-color:#B54A6E; } 
+.post-tag.post-jeff-buckley { border-color: #6BFA05; color: #6BFA05; } 
+.post-tag.post-jeff-buckley:hover{ background-color:#6BFA05; } 
+.post-tag.post-rock { border-color: #000E29; color: #000E29; } 
+.post-tag.post-rock:hover{ background-color:#000E29; } 
+.post-tag.post-u2 { border-color: #95C454; color: #95C454; } 
+.post-tag.post-u2:hover{ background-color:#95C454; } 
+.post-tag.post-dirty-beaches { border-color: #EC1378; color: #EC1378; } 
+.post-tag.post-dirty-beaches:hover{ background-color:#EC1378; } 
+.post-tag.post-electro-rock { border-color: #1FE0D0; color: #1FE0D0; } 
+.post-tag.post-electro-rock:hover{ background-color:#1FE0D0; } 
+.post-tag.post-luna { border-color: #EC200E; color: #EC200E; } 
+.post-tag.post-luna:hover{ background-color:#EC200E; } 
+.post-tag.post-the-velvet-underground { border-color: #88718E; color: #88718E; } 
+.post-tag.post-the-velvet-underground:hover{ background-color:#88718E; } 
+.post-tag.post-lou-reed { border-color: #BADA55; color: #BADA55; } 
+.post-tag.post-lou-reed:hover{ background-color:#BADA55; } 
+.post-tag.post-common-rider { border-color: #FACADE; color: #FACADE; } 
+.post-tag.post-common-rider:hover{ background-color:#FACADE; } 
+.post-tag.post-punk { border-color: #47A1B8; color: #47A1B8; } 
+.post-tag.post-punk:hover{ background-color:#47A1B8; } 
+.post-tag.post-say-hi { border-color: #E35F68; color: #E35F68; } 
+.post-tag.post-say-hi:hover{ background-color:#E35F68; } 
+.post-tag.post-jethro-tull { border-color: #067BF9; color: #067BF9; } 
+.post-tag.post-jethro-tull:hover{ background-color:#067BF9; } 
+.post-tag.post-the-drums { border-color: #F26C0D; color: #F26C0D; } 
+.post-tag.post-the-drums:hover{ background-color:#F26C0D; } 
+.post-tag.post-rasco { border-color: #798CE6; color: #798CE6; } 
+.post-tag.post-rasco:hover{ background-color:#798CE6; } 
+.post-tag.post-hip-hop { border-color: #966969; color: #966969; } 
+.post-tag.post-hip-hop:hover{ background-color:#966969; } 
+.post-tag.post-vampire-weekend { border-color: #B6497A; color: #B6497A; } 
+.post-tag.post-vampire-weekend:hover{ background-color:#B6497A; } 
+.post-tag.post-rancid { border-color: #7D7F82; color: #7D7F82; } 
+.post-tag.post-rancid:hover{ background-color:#7D7F82; } 
+.post-tag.post-bill-wyman { border-color: #49B6A8; color: #49B6A8; } 
+.post-tag.post-bill-wyman:hover{ background-color:#49B6A8; } 
+.post-tag.post-britney-spears { border-color: #DE1E7E; color: #DE1E7E; } 
+.post-tag.post-britney-spears:hover{ background-color:#DE1E7E; } 
+.post-tag.post-awesome { border-color: #B00B00; color: #B00B00; } 
+.post-tag.post-awesome:hover{ background-color:#B00B00; } 

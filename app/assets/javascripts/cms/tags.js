@@ -53,4 +53,18 @@ $(document).on( 'page:change', function(){
           $(this).text('Recompile Stylesheets').toggleClass('btn-warning btn-default');
           alert("There was a problem updating the stylesheets. Please try again.");
       });
+
+    // Ajax to remove tags from post
+    $(".tag-remove")
+      .on('ajax:before', function(evt,data,status,xhr) {
+          $(this).text('(-)');
+      })
+      .on("ajax:success", function(evt, data, status, xhr) {
+        $(this).prev().fadeOut('slow');
+        $(this).fadeOut('slow');
+      })
+      .on("ajax:error", function(evt, data, status, xhr) {
+          $(this).text('(x)');
+          alert("There was a problem removing the tag.");
+      });
 });

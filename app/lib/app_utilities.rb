@@ -1,6 +1,7 @@
 # SRC: http://code-worrier.com/blog/custom-slugs-in-rails/
 module ActiveRecordExtensions
   extend ActiveSupport::Concern
+
   module ClassMethods
     # Override 'to_param'.
     def custom_slugs_with(seed)
@@ -9,6 +10,8 @@ module ActiveRecordExtensions
       end
     end
   end
+
+  
   # Include above methods in all models.
   ActiveRecord::Base.send(:include, ActiveRecordExtensions)
 end

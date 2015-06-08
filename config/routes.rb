@@ -7,9 +7,12 @@ Rails.application.routes.draw do
   get '/cms' => 'cms#index'
 
   namespace :cms do
+    delete "/tagging/:post_id/:tag_id" => "taggings#destroy", as: 'delete_tagging_path'
     resources :pages, :except => [:show]
     resources :posts, :except => [:show]
     resources :admins, :controller => "admins"
+    
+
     put '/tags/css' => 'tags#css'
     resources :tags, :only => ['index','update','destroy']
     get '/settings' => 'settings#index'

@@ -29,8 +29,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'exception_handler', '~> 0.3.45'
 
-gem 'whenever', :require => false
-
 group :development, :test do
   gem 'seed_dump'
   gem 'html2haml'

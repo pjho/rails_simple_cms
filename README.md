@@ -15,16 +15,15 @@ Feel free to make changes.
 * All bundled in a slick, bootstrap powered, responsive interface
 
 
-<img alt="Welcome" src="http://pjho.github.io/images/thumbs/01_welcome.png" style="width:48%">
-<img alt="Pages" src="http://pjho.github.io/images/thumbs/02_pages.png" style="width:48%">
-<img alt="Posts" src="http://pjho.github.io/images/thumbs/03_posts.png" style="width:48%">
-<img alt="Post Edit" src="http://pjho.github.io/images/thumbs/04_post_edit.png" style="width:48%">
-<img alt="Tags" src="http://pjho.github.io/images/thumbs/05_tags.png" style="width:48%">
-<img alt="Menus" src="http://pjho.github.io/images/thumbs/06_menus.png" style="width:48%">
-<img alt="Admins" src="http://pjho.github.io/images/thumbs/07_admins.png" style="width:48%">
-<img alt="Settings" src="http://pjho.github.io/images/thumbs/08_settings.png" style="width:48%">
-<img alt="Profile" src="http://pjho.github.io/images/thumbs/09_profile.png" style="width:48%">
-
+<img alt="Welcome" src="http://pjho.github.io/images/thumbs/01_welcome.png" width='355' height="auto">
+<img alt="Pages" src="http://pjho.github.io/images/thumbs/02_pages.png" width='355' height="auto">
+<img alt="Posts" src="http://pjho.github.io/images/thumbs/03_posts.png" width='355' height="auto">
+<img alt="Post Edit" src="http://pjho.github.io/images/thumbs/04_post_edit.png" width='355' height="auto">
+<img alt="Tags" src="http://pjho.github.io/images/thumbs/05_tags.png" width='355' height="auto">
+<img alt="Menus" src="http://pjho.github.io/images/thumbs/06_menus.png" width='355' height="auto">
+<img alt="Admins" src="http://pjho.github.io/images/thumbs/07_admins.png" width='355' height="auto">
+<img alt="Settings" src="http://pjho.github.io/images/thumbs/08_settings.png" width='355' height="auto">
+<img alt="Profile" src="http://pjho.github.io/images/thumbs/09_profile.png" width='355' height="auto">
   
 
 ---

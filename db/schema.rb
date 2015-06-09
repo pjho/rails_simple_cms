@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150604052405) do
+ActiveRecord::Schema.define(version: 20150609022851) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -30,8 +33,8 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.boolean  "sudo",                   default: false
   end
 
-  add_index "admins", ["email"], name: "index_admins_on_email", unique: true
-  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
+  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
   create_table "pages", force: :cascade do |t|
     t.string   "title"
@@ -42,8 +45,7 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.datetime "updated_at",                 null: false
   end
 
-  add_index "pages", ["content"], name: "index_pages_on_content", unique: true
-  add_index "pages", ["published"], name: "index_pages_on_published"
+  add_index "pages", ["published"], name: "index_pages_on_published", using: :btree
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
@@ -54,7 +56,7 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.datetime "updated_at",                 null: false
   end
 
-  add_index "posts", ["published"], name: "index_posts_on_published"
+  add_index "posts", ["published"], name: "index_posts_on_published", using: :btree
 
   create_table "settings", force: :cascade do |t|
     t.string   "var",                   null: false
@@ -65,7 +67,7 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.datetime "updated_at"
   end
 
-  add_index "settings", ["thing_type", "thing_id", "var"], name: "index_settings_on_thing_type_and_thing_id_and_var", unique: true
+  add_index "settings", ["thing_type", "thing_id", "var"], name: "index_settings_on_thing_type_and_thing_id_and_var", unique: true, using: :btree
 
   create_table "taggings", force: :cascade do |t|
     t.integer  "post_id"
@@ -74,8 +76,8 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "taggings", ["post_id"], name: "index_taggings_on_post_id"
-  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+  add_index "taggings", ["post_id"], name: "index_taggings_on_post_id", using: :btree
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id", using: :btree
 
   create_table "tags", force: :cascade do |t|
     t.string   "name"
@@ -84,6 +86,8 @@ ActiveRecord::Schema.define(version: 20150604052405) do
     t.datetime "updated_at",                     null: false
   end
 
-  add_index "tags", ["name"], name: "index_tags_on_name"
+  add_index "tags", ["name"], name: "index_tags_on_name", using: :btree
 
+  add_foreign_key "taggings", "posts"
+  add_foreign_key "taggings", "tags"
 end

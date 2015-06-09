@@ -16,63 +16,35 @@ Feel free to make changes.
 
 
 
-<div  id="gallery" class="50% row uniform">
+<a href="http://pjho.github.io/images/fulls/01_welcome.png">
+<img alt="Welcome" src="http://pjho.github.io/images/thumbs/01_welcome.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/02_pages.png">
+<img alt="Pages" src="http://pjho.github.io/images/thumbs/02_pages.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/03_posts.png">
+<img alt="Posts" src="http://pjho.github.io/images/thumbs/03_posts.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/04_post_edit.png">
+<img alt="Post Edit" src="http://pjho.github.io/images/thumbs/04_post_edit.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/05_tags.png">
+<img alt="Tags" src="http://pjho.github.io/images/thumbs/05_tags.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/06_menus.png">
+<img alt="Menus" src="http://pjho.github.io/images/thumbs/06_menus.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/07_admins.png">
+<img alt="Admins" src="http://pjho.github.io/images/thumbs/07_admins.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/08_settings.png">
+<img alt="Settings" src="http://pjho.github.io/images/thumbs/08_settings.png">
+</a>
+<a href="http://pjho.github.io/images/fulls/09_profile.png">
+<img alt="Profile" src="http://pjho.github.io/images/thumbs/09_profile.png">
+</a>
+
   
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/01_welcome.png">
-      <img alt="Welcome" src="/images/thumbs/01_welcome.png">
-    </a>
-  </div>
-  
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/02_pages.png">
-      <img alt="Pages" src="/images/thumbs/02_pages.png">
-    </a>
-  </div>
-  
-  <div class="4u$">
-    <a class="image fit thumb" href="/images/fulls/03_posts.png">
-      <img alt="Posts" src="/images/thumbs/03_posts.png">
-    </a>
-  </div>
-  
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/04_post_edit.png">
-      <img alt="Post Edit" src="/images/thumbs/04_post_edit.png">
-    </a>
-  </div>
-  
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/05_tags.png">
-      <img alt="Tags" src="/images/thumbs/05_tags.png">
-    </a>
-  </div>
-  
-  <div class="4u$">
-    <a class="image fit thumb" href="/images/fulls/06_menus.png">
-      <img alt="Menus" src="/images/thumbs/06_menus.png">
-    </a>
-  </div>
-  
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/07_admins.png">
-      <img alt="Admins" src="/images/thumbs/07_admins.png">
-    </a>
-  </div>
-  
-  <div class="4u">
-    <a class="image fit thumb" href="/images/fulls/08_settings.png">
-      <img alt="Settings" src="/images/thumbs/08_settings.png">
-    </a>
-  </div>
-  
-  <div class="4u$">
-    <a class="image fit thumb" href="/images/fulls/09_profile.png">
-      <img alt="Profile" src="/images/thumbs/09_profile.png">
-    </a>
-  </div>
-  
-</div>
 
 ---
 ##What did I learn?
